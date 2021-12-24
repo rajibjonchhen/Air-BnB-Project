@@ -40,7 +40,7 @@
 footer li{
   font-size: 15px;
 }
-footer ul li:first-of-type {
+footer li:first-of-type {
   font-size: 15px;
   font-weight: 600;
 }

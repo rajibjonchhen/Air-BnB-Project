@@ -2,7 +2,8 @@
 import React, { Component } from 'react';
 import {Container, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap'
 import '../App.css'
-
+import { FaFacebookF, FaTwitter, FaInstagramSquare } from "react-icons/fa";
+// import { TiSocialInstagram} from "react-icons/Ti";
 
 export default class MyFooter extends React.Component {
 
@@ -36,6 +37,16 @@ export default class MyFooter extends React.Component {
         "Investors",
         "Airbnb Luxe"],
     ]
+
+    footerFootLeft = [
+        [" © 2021 Airbnb, Inc.",
+        "·Privacy",
+        "·Terms",
+        "·Sitemap",
+        ],
+        [],
+    ]
+
     render() { 
         return (<>
                <footer>
@@ -51,6 +62,37 @@ export default class MyFooter extends React.Component {
                        </Col>
                         ))
                        }</Row>
+                       <hr/>
+                       <Row className="d-flex justify-content-between">
+                           {/* <Col> */}
+                                <ul className="list-unstyled text-left d-flex">{
+                                    this.footerFootLeft.map(list => (
+                                        <li className>{list}</li>
+                                    ))
+                                }
+                                   
+                                </ul>
+                           {/* </Col> */}
+                           {/* <Col> */}
+                                <ul className="list-unstyled text-left d-flex">
+                                    <li className = "mx-2">
+                                        English (US)
+                                    </li>
+                                    <li className = "mx-2">
+                                        € EUR
+                                    </li>
+                                    <li className = "mx-2">
+                                            <FaFacebookF/>
+                                    </li>
+                                    <li className = "mx-2">
+                                    <FaTwitter/> 
+                                    </li>
+                                    <li>
+                                    <FaInstagramSquare/>
+                                    </li>
+                                </ul>
+                           {/* </Col> */}
+                       </Row>
                        </Container> 
                </footer>
         </>);
