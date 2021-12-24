@@ -39,60 +39,35 @@ export default class MyFooter extends React.Component {
     ]
 
     footerFootLeft = [
-        [" © 2021 Airbnb, Inc.",
-        "·Privacy",
-        "·Terms",
-        "·Sitemap",
-        ],
-        [],
+        [" © 2021 Airbnb, Inc.","· Privacy","· Terms","· Sitemap"],
+        ["  English (US)"," € EUR", <FaFacebookF/>, <FaTwitter/> ,<FaInstagramSquare/>],
     ]
 
     render() { 
         return (<>
                <footer>
                <Container>
-                   <Row>{
-                        this.footer.map(lists =>(
-                       <Col>
-                       <ul className="list-unstyled text-left">{
+                   <Row >{
+                        this.footer.map((lists,i) =>(
+                       <Col xs={12} sm={6} md={6} lg={3}>
+                       <ul key={lists} className="list-unstyled text-left">{
                            lists.map(item =>(
-                               <li className="my-3">{item}</li>
+                               <li key={item}className="my-3">{item}</li>
                                ))
                             } </ul>
                        </Col>
                         ))
                        }</Row>
                        <hr/>
-                       <Row className="d-flex justify-content-between">
-                           {/* <Col> */}
-                                <ul className="list-unstyled text-left d-flex">{
-                                    this.footerFootLeft.map(list => (
-                                        <li className>{list}</li>
+                       <Row className="d-flex justify-content-between">{
+                           this.footerFootLeft.map(lists =>(
+                               <ul key={lists} className="list-unstyled text-left d-flex">{
+                                   lists.map(list => (
+                                       <li key={list} className="mx-2">{list}</li>
+                                       ))
+                                    }</ul>
                                     ))
-                                }
-                                   
-                                </ul>
-                           {/* </Col> */}
-                           {/* <Col> */}
-                                <ul className="list-unstyled text-left d-flex">
-                                    <li className = "mx-2">
-                                        English (US)
-                                    </li>
-                                    <li className = "mx-2">
-                                        € EUR
-                                    </li>
-                                    <li className = "mx-2">
-                                            <FaFacebookF/>
-                                    </li>
-                                    <li className = "mx-2">
-                                    <FaTwitter/> 
-                                    </li>
-                                    <li>
-                                    <FaInstagramSquare/>
-                                    </li>
-                                </ul>
-                           {/* </Col> */}
-                       </Row>
+                      }</Row>
                        </Container> 
                </footer>
         </>);
