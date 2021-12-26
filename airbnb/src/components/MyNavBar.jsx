@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import {Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
+import brand from './brand.png'
 import '../App.css'
 
 
 class MyNavBar extends React.Component {
     render() { 
         return (<>
-       <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"black" }} variant="dark">
-  <Navbar.Brand href="#home"><img src='./brand.png'/></Navbar.Brand>
+       <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"black", }} variant="dark">
+  <Navbar.Brand href="#home"><img src={brand} style={{width:"100px" }}/></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">

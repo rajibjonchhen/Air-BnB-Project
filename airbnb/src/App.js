@@ -6,10 +6,12 @@ import MyNavBar from './components/MyNavBar';
 import MyJumbotron from './components/MyJumbotron';
 import MyCards from './components/MyCards';
 import MyFooter from './components/MyFooter';
+import MySearchBar from './components/MySearchBar';
 function App() {
   return (
     <div className="App">
 <MyNavBar/>
+<MySearchBar/>
 <MyJumbotron/>
 <MyCards/>
 <MyFooter  className="App-header"/>
