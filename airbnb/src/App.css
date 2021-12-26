@@ -44,3 +44,12 @@ footer li:first-of-type {
   font-size: 15px;
   font-weight: 600;
 }
+
+
+.roundedBorder{
+border-radius:50px;
+}
+
+div.roundedBorder:hover {
+  background-color: rgba(184, 184, 184, 0.344);
+}
