@@ -26,15 +26,18 @@ class MyNavBar extends React.Component {
       <Nav.Link href="#deets" className="text-white">Become a Host</Nav.Link>
       <Nav.Link href="#deets" ><FiGlobe/></Nav.Link>
       <Dropdown>
-  <Dropdown.Toggle variant="white" id="dropdown-basic">
-    <span className="roundedBorder bgWhite text-dark w-100 p-2"> < GoThreeBars id="collasible-nav-dropdown"/> <FaUserCircle/></span>
+  <Dropdown.Toggle  id="dropdown-basic" alignLeft>
+    <span > < GoThreeBars/> <FaUserCircle/></span>
 
   </Dropdown.Toggle>
 
-  <Dropdown.Menu>
-    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  <Dropdown.Menu id="dropdown-menu">
+    <Dropdown.Item className = "fontBold" href="#/action-1">Sign Up</Dropdown.Item>
+    <Dropdown.Item href="#/action-1">Log in</Dropdown.Item>
+    <hr/>
+    <Dropdown.Item href="#/action-2">Host your home</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Host an experience</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Help</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
     </Nav>

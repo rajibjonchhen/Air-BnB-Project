@@ -11,8 +11,10 @@ class MySearchBar extends React.Component {
         borderRadius:"60%",
         fontSize:"20px", 
         backgroundColor:"red", 
-        padding:"5px 10px",
-        color:"white" }
+        padding:"10px 15px",
+        color:"white",
+        boxSizing:"borderBox"
+    }
     render() { 
         return <Container >
             <Row >

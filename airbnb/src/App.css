@@ -38,18 +38,45 @@
   }
 }
 
+
+#dropdown-basic {
+  background-color: white ;
+  color:black ;
+  border-radius:50px;
+}
+
+#dropdown-menu{
+  background-color:white;
+  width: 200px;
+border-radius:20px;
+overflow: hidden;
+
+  }
+
+
 footer li{
   font-size: 15px;
 }
 footer li:first-of-type {
   font-size: 15px;
   font-weight: 600;
+border-radius:50px;
+
 }
 
 
 .roundedBorder{
 border-radius:50px;
 }
+
+.roundedBorder::after{
+  
+  top:"20px";
+  left: "20px";
+  background-color: rgba(184, 184, 184, 0.344);
+  border-left:10px solid rgba(184, 184, 184, 0.344);
+  z-index: '1';
+  }
 
 div.roundedBorder:hover {
   background-color: rgba(184, 184, 184, 0.344);
@@ -66,5 +93,6 @@ div.roundedBorder:hover {
 }
 
 .bgWhite {
-  background-color: white;
+  background-color: white !important;
 }
+
