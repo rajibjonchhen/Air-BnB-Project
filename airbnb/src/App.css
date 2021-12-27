@@ -64,3 +64,7 @@ div.roundedBorder:hover {
   font-weight: bold;
   color:black;
 }
+
+.bgWhite {
+  background-color: white;
+}

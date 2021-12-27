@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import {Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
+import {Navbar, Nav, NavDropdown, Container, Dropdown} from 'react-bootstrap'
+import {FiGlobe} from 'react-icons/fi'
+import {FaUserCircle} from 'react-icons/fa'
+import {GoThreeBars} from 'react-icons/go'
 import brand from './brand.png'
 import '../App.css'
 
@@ -16,20 +19,24 @@ class MyNavBar extends React.Component {
       <Nav.Link href="#features" className="text-white">Place to stay</Nav.Link>
       <Nav.Link href="#pricing" className="text-white">Experience</Nav.Link>
       <Nav.Link href="#pricing" className="text-white">Online Experiences</Nav.Link>
-     
     </Nav>
+    
     <Nav>
-    <NavDropdown title="=" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-      <Nav.Link href="#deets">Become a Host</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
-      </Nav.Link>
+    
+      <Nav.Link href="#deets" className="text-white">Become a Host</Nav.Link>
+      <Nav.Link href="#deets" ><FiGlobe/></Nav.Link>
+      <Dropdown>
+  <Dropdown.Toggle variant="white" id="dropdown-basic">
+    <span className="roundedBorder bgWhite text-dark w-100 p-2"> < GoThreeBars id="collasible-nav-dropdown"/> <FaUserCircle/></span>
+
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu>
+    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
