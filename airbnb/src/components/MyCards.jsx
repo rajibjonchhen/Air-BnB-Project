@@ -19,7 +19,7 @@ export default class MyCards extends React.Component {
     ]
     render() { 
         return (<>{
-                   <Container className='MyCards'>
+                   <Container className='MyCards' >
                    <Row>{
                        this.cards.map((card,i) =>(
                            <SingleCard card = {card} />
