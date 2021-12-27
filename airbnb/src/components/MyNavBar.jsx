@@ -11,6 +11,7 @@ class MyNavBar extends React.Component {
   <Navbar.Brand href="#home"><img src={brand} style={{width:"100px" }}/></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
+
     <Nav className="mr-auto">
       <Nav.Link href="#features" className="text-white">Place to stay</Nav.Link>
       <Nav.Link href="#pricing" className="text-white">Experience</Nav.Link>
@@ -18,7 +19,7 @@ class MyNavBar extends React.Component {
      
     </Nav>
     <Nav>
-    <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+    <NavDropdown title="=" id="collasible-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>

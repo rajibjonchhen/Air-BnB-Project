@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -52,4 +53,14 @@ border-radius:50px;
 
 div.roundedBorder:hover {
   background-color: rgba(184, 184, 184, 0.344);
+}
+
+.fontSize{
+  font-size: 13px;
+  color:grey; 
+}
+
+.fontBold{
+  font-weight: bold;
+  color:black;
 }
