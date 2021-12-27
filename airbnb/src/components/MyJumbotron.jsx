@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import {Container, Jumbotron,} from 'react-bootstrap'
 import jumboCard from '../jumboCard.png'
 import frontpic from '../frontpic.png'
-
 import '../App.css'
 
 

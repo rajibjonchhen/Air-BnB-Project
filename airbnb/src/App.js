@@ -9,12 +9,12 @@ import MyFooter from './components/MyFooter';
 import MySearchBar from './components/MySearchBar';
 function App() {
   return (
-    <div className="App bg-dark" style={{backgroundColor:"red"}}ß>
+    <div className="App" style={{backgroundColor:"black"}}ß>
 <MyNavBar/>
 <MySearchBar/>
 <MyJumbotron/>
 <MyCards/>
-<MyFooter  className="App-header"/>
+<MyFooter  className=""/>
    
     </div>
   );

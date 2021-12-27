@@ -2,27 +2,29 @@
 
 import React, { Component } from 'react';
 import {Container, Row, Col, Card, ListGroup, ListGroupItem} from 'react-bootstrap'
+import img1 from './1.png'
+import img2 from './2.png'
+import img3 from './3.png'
+import img4 from './4.png'
 import '../App.css'
+import SingleCard from './SingleCard';
 
 
 export default class MyCards extends React.Component {
+    cards = [
+        {"image":img1, "title":"Porto","description":"274 kilometer away", "bgcolor":"rgb(188,25,109)"},
+        {"image":img2, "title":"Coimbra","description":"174 kilometer away", "bgcolor":"rgb(221,49,80)"},
+        {"image":img3, "title":"Covilha","description":"74 kilometer away", "bgcolor":"rgb(204,44,74)"},
+        {"image":img4, "title":"Evora","description":"104 kilometer away", "bgcolor":"rgb(217,58,48)"},
+    ]
     render() { 
         return (<>{
-                   <Container>
-                   <Row>
-
-                   <Card className="bg-dark text-white">
-                <Card.Img src="holder.js/100px270" alt="Card image" />
-                <Card.ImgOverlay>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-                    </Card.Text>
-                    <Card.Text>Last updated 3 mins ago</Card.Text>
-                </Card.ImgOverlay>
-                </Card> 
-                   </Row>
+                   <Container className='MyCards'>
+                   <Row>{
+                       this.cards.map((card,i) =>(
+                           <SingleCard card = {card} />
+                           ) )
+                        }</Row>
                    </Container>
                 }</>);
     }

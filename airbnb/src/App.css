@@ -56,8 +56,8 @@ overflow: hidden;
   .jumbotron{
     background-color: blackß;
     position: relative;
-    height: 150vh;
-    padding-bottom:50vh;
+    min-height: 150vh;
+    
   }
 
   .jumboPoster h1{
@@ -74,15 +74,6 @@ overflow: hidden;
     padding: 50px;
   }
 
-footer li{
-  font-size: 15px;
-}
-footer li:first-of-type {
-  font-size: 15px;
-  font-weight: 600;
-border-radius:50px;
-
-}
 
 
 .roundedBorder{
@@ -114,5 +105,23 @@ div.roundedBorder:hover {
 
 .bgWhite {
   background-color: white !important;
+}
+
+.MyCards{
+  margin-top: 100vh;
+}
+footer{
+
+  margin-top: 20px;
+  background-color: white;
+}
+footer li{
+  font-size: 15px;
+}
+footer li:first-of-type {
+  font-size: 15px;
+  font-weight: 600;
+border-radius:50px;
+
 }
 
