@@ -9,7 +9,7 @@ import MyFooter from './components/MyFooter';
 import MySearchBar from './components/MySearchBar';
 function App() {
   return (
-    <div className="App bg-dark" style={{backgroundColor:"black"}}>
+    <div className="App bg-dark" style={{backgroundColor:"red"}}ß>
 <MyNavBar/>
 <MySearchBar/>
 <MyJumbotron/>

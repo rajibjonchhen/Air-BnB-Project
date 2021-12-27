@@ -53,6 +53,26 @@ overflow: hidden;
 
   }
 
+  .jumbotron{
+    background-color: blackß;
+    position: relative;
+    height: 150vh;
+    padding-bottom:50vh;
+  }
+
+  .jumboPoster h1{
+    font-size: 100px;
+  }
+
+  .jumboPoster{
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    position:absolute;
+    bottom:-60%;
+    z-index: 1;
+    padding: 50px;
+  }
 
 footer li{
   font-size: 15px;

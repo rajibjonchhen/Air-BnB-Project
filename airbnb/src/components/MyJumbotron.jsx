@@ -1,6 +1,9 @@
 
 import React, { Component } from 'react';
 import {Container, Jumbotron,} from 'react-bootstrap'
+import jumboCard from '../jumboCard.png'
+import frontpic from '../frontpic.png'
+
 import '../App.css'
 
 
@@ -8,7 +11,7 @@ export default class MyJumbotron extends React.Component {
 
     jumboStyle ={
         color:"white",
-        top:"25%",
+        top:"50%",
         right:"0",
         height:"100vh",
         width:"100vw", 
@@ -28,9 +31,9 @@ export default class MyJumbotron extends React.Component {
     
     render() { 
         return (<>
-                <Container className="p-5" style={{backgroundColor:"black" }} fluid>
+                <Container className="jumbotron p-5" style={{backgroundColor:"black" }} fluid>
                    <div className="position-relative">
-                    <img src= "https://a0.muscache.com/im/pictures/2459fa90-5f66-4198-a8f2-43d8f8783bc2.jpg?im_q=highq&im_w=720" style={{width:"1220px" }} />
+                    <img src= {frontpic} style={{width:"1320px",borderRadius:"15px" }} />
                   
                    <div className="position-absolute"  style={this.jumboStyle}>      
                     <h1>Not sure where to go? Perfect.</h1>
@@ -39,6 +42,19 @@ export default class MyJumbotron extends React.Component {
                    </button>
                    </div>
                    </div>
+
+                <div className =" jumboPoster d-flex align-items-center"  style={{backgroundColor:"rgb(241,241,241)"}} >
+                    <div className ="w-100" >
+                        <p className ="h3">Introducing</p>
+                        <h1>Airbnb <br/> Gift Cards</h1>
+                        <button className = "roundedBorder text-white p-2 w-25" style={{backgroundColor:"black"}} >
+                       shop now
+                   </button>
+                    </div>
+                    <div className ="w-100">
+                        <img src={jumboCard} className ="w-100"/>
+                    </div>
+                </div>
                 </Container>
         </>);
     }
