@@ -11,11 +11,12 @@ class MyNavBar extends React.Component {
     render() { 
         return (<>
        <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"black", }} variant="dark">
-  <Navbar.Brand href="#home"><img src={brand} style={{width:"100px" }}/></Navbar.Brand>
+  <Navbar.Brand href="#home"><img src="https://cdn.freebiesupply.com/images/large/2x/airbnb-logo-white-on-black.png" style={{width:"100px" }}/></Navbar.Brand>  
+  {/*red one "https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png" */}
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
+  <Navbar.Collapse  id="responsive-navbar-nav">
 
-    <Nav className="mr-auto">
+    <Nav className="ml-auto">
       <Nav.Link href="#features" className="text-white">Place to stay</Nav.Link>
       <Nav.Link href="#pricing" className="text-white">Experience</Nav.Link>
       <Nav.Link href="#pricing" className="text-white">Online Experiences</Nav.Link>

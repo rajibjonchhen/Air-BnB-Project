@@ -8,7 +8,7 @@ import '../App.css'
 
 export default class MyJumbotron extends React.Component {
 
-    jumboStyle ={
+    jumboTextStyle ={
         color:"white",
         top:"50%",
         right:"0",
@@ -32,9 +32,9 @@ export default class MyJumbotron extends React.Component {
         return (<>
                 <Container className="jumbotron p-5" style={{backgroundColor:"black" }} fluid>
                    <div className="position-relative">
-                    <img src= {frontpic} style={{width:"1320px",borderRadius:"15px" }} />
+                    <img src= {frontpic} style={{borderRadius:"15px" }} />
                   
-                   <div className="position-absolute"  style={this.jumboStyle}>      
+                   <div className="position-absolute"  style={this.jumboTextStyle}>      
                     <h1>Not sure where to go? Perfect.</h1>
                    <button style={this.buttonStyle} >
                        I'm flexible
