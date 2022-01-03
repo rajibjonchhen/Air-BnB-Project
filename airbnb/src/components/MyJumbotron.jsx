@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import {Container, Jumbotron,} from 'react-bootstrap'
+import {Container,Row, Col} from 'react-bootstrap'
 import jumboCard from '../jumboCard.png'
 import frontpic from '../frontpic.png'
 import '../App.css'
@@ -10,25 +10,10 @@ export default class MyJumbotron extends React.Component {
 
     jumboTextStyle ={
         color:"white",
-        top:"50%",
+        top:"30%",
         right:"0",
-        height:"100vh",
-        width:"100vw", 
-        backgroundSize: 'cover',
-        backgroundPosition:"center",
-        backgroundRepeat:"none",
-        backgroundRepeat:"none",    
     }
 
-    frontpic ={
-       
-        height:"500vh",
-        width:"50vw", 
-        backgroundSize: 'cover',
-        backgroundPosition:"center",
-        backgroundRepeat:"none",
-        backgroundRepeat:"none",    
-    }
     buttonStyle = {
         color:"purple",
         borderRadius:"30px",
@@ -39,9 +24,12 @@ export default class MyJumbotron extends React.Component {
     
     render() { 
         return (<>
-                <Container className="jumbotron p-5" style={{backgroundColor:"black" }} >
+                <Container className="jumbotron p-5" style={{backgroundColor:"black" }} fluid>
+                    <Row>
+                        <Col>
+                        
                    <div className="dRelative">
-                    <img src= {frontpic} style={{borderRadius:"15px" }} />
+                    <img className="w-100" src= {frontpic} style={{borderRadius:"15px" }} />
                   
                    <div className="dAbsolute"  style={this.jumboTextStyle}>      
                     <h1>Not sure where to go? Perfect.</h1>
@@ -51,8 +39,13 @@ export default class MyJumbotron extends React.Component {
                    </div>
                    </div>
 
-                <div className =" jumboPoster d-flex align-items-center"  style={{backgroundColor:"rgb(241,241,241)"}} >
-                    <div className ="w-100" >
+                </Col>
+                    </Row>
+               
+                    <Row>
+                        <Col>
+                        <div className ="jumboPoster d-flex align-items-center"  style={{backgroundColor:"rgb(241,241,241)"}} >
+                        <div className ="w-100" >
                         <p className ="h3">Introducing</p>
                         <h1>Airbnb <br/> Gift Cards</h1>
                         <button className = "roundedBorder text-white p-2 w-25" style={{backgroundColor:"black"}} >
@@ -63,6 +56,9 @@ export default class MyJumbotron extends React.Component {
                         <img src={jumboCard} className ="w-100"/>
                     </div>
                 </div>
+                        
+                        </Col>
+                    </Row>
                 </Container>
         </>);
     }

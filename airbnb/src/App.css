@@ -66,6 +66,10 @@ left:-175px;
     border: none;
     background-color: rgba(255, 255, 255, 0);
   }
+
+  input:active{
+border-color:rgba(255, 255, 255, 0);
+  }
   .roundedBorder{
     border-radius:50px;
     }
@@ -110,13 +114,10 @@ left:-175px;
   }
 
   .jumboPoster{
-    width: 90%;
+    width: 100%;
     margin: auto;
     border-radius: 20px;
-    position:absolute;
-    bottom:-60%;
     z-index: 1;
-    padding: 50px;
   }
 
 

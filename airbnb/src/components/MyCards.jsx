@@ -18,15 +18,16 @@ export default class MyCards extends React.Component {
         {"image":img4, "title":"Evora","description":"104 kilometer away", "bgcolor":"rgb(217,58,48)"},
     ]
     render() { 
-        return (<>{
-                   <Container className='MyCards' >
+        return (
+                   <Container className='MyCards'>
+                        <h1 className='text-white text-left'>Inspiration for your next trip</h1>
                    <Row>{
                        this.cards.map((card,i) =>(
                            <SingleCard card = {card} />
                            ) )
                         }</Row>
                    </Container>
-                }</>);
+                );
     }
 }
 
