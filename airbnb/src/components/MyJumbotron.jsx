@@ -20,6 +20,15 @@ export default class MyJumbotron extends React.Component {
         backgroundRepeat:"none",    
     }
 
+    frontpic ={
+       
+        height:"500vh",
+        width:"50vw", 
+        backgroundSize: 'cover',
+        backgroundPosition:"center",
+        backgroundRepeat:"none",
+        backgroundRepeat:"none",    
+    }
     buttonStyle = {
         color:"purple",
         borderRadius:"30px",
@@ -30,7 +39,7 @@ export default class MyJumbotron extends React.Component {
     
     render() { 
         return (<>
-                <Container className="jumbotron p-5" style={{backgroundColor:"black" }} fluid>
+                <Container className="jumbotron p-5" style={{backgroundColor:"black" }} >
                    <div className="position-relative">
                     <img src= {frontpic} style={{borderRadius:"15px" }} />
                   

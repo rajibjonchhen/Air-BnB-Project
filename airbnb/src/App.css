@@ -38,7 +38,7 @@
   }
 }
 
-
+/* from navbar */
 #dropdown-basic {
   background-color: white ;
   color:black ;
@@ -53,6 +53,39 @@ overflow: hidden;
 
   }
 
+  /* from searchbar */
+  .roundedBorder{
+    border-radius:50px;
+    }
+    
+    
+    div.roundedBorder:hover {
+      background-color: rgba(184, 184, 184, 0.344);
+    }
+    
+    .fontSize{
+      font-size: 13px;
+      color:grey; 
+    }
+    
+    .fontBold{
+      font-weight: bold;
+      color:black;
+    }
+    
+    .bgWhite {
+      background-color: white !important;
+    }
+
+    .dRelative {
+      position:relative,
+  }
+  
+  .dAbsolute{
+      position:absolute,
+  }
+
+  /* from jumbotron */
   .jumbotron{
     background-color: blackß;
     position: relative;
@@ -75,41 +108,12 @@ overflow: hidden;
   }
 
 
-
-.roundedBorder{
-border-radius:50px;
-}
-
-.roundedBorder::after{
-  
-  top:"20px";
-  left: "20px";
-  background-color: rgba(184, 184, 184, 0.344);
-  border-left:10px solid rgba(184, 184, 184, 0.344);
-  z-index: '1';
-  }
-
-div.roundedBorder:hover {
-  background-color: rgba(184, 184, 184, 0.344);
-}
-
-.fontSize{
-  font-size: 13px;
-  color:grey; 
-}
-
-.fontBold{
-  font-weight: bold;
-  color:black;
-}
-
-.bgWhite {
-  background-color: white !important;
-}
-
+/* cards */
 .MyCards{
   margin-top: 100vh;
 }
+
+/* from foooter */
 footer{
 
   margin-top: 20px;
