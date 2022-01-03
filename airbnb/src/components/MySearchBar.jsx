@@ -8,7 +8,7 @@ import '../App.css'
 class MySearchBar extends React.Component {
 
     state = {
-        display:'true',
+        display:'false',
     }
 
     searchStyle = {
@@ -20,21 +20,28 @@ class MySearchBar extends React.Component {
         boxSizing:"borderBox"
     }
     
-    dropDown = {
-        
-    }
+
 
   
     render() { 
-        return <Container >
-            <Row >
+        return (
+            <Container  className="dAbsolute" style={{top:"-170px"}}>
+          
+            <Row className="d-flex  flex-column text-white">
+                <Col className="d-flex  justify-content-around text-white"> 
+                    <div className="d-flex text-left text-white">
+                        <p href="#features" className="mx-3">Place to stay</p>
+                        <p href="#pricing" className="mx-3">Experience</p>
+                        <p href="#pricing" className="mx-3">Online Experiences</p>
+                    </div>
+                </Col>
             <Col className=" dRelative bg-light d-flex justify-content-between roundedBorder m-0 p-0" >
                 <div className = "d-flex align-items-start flex-column roundedBorder pl-5  p-2 w-100" onClick={(e) =>this.setState({display:!this.state.display})} >
                 
                 <span className="fontSize fontBold">Location</span>
-                <span className="fontSize">Where are you going?</span>
+                <input className="fontSize" placeholder='Where are you going?'/>
               
-                <div  className=" bg-light roundedBorder m-1 p-4" style={{backgroundColor:"white",position:"absolute",left:"0",top:"75px", zIndex:"10", minWidth:'500px',minHeight:'200px',display:this.state.display? 'block':'none'}} >
+                <div  className=" bg-light roundedBorder m-1 p-4" style={{backgroundColor:"white",position:"absolute",left:"0",top:"75px", zIndex:"10", minWidth:'500px',minHeight:'200px',display:this.state.display? 'none':'block'}} >
                     <p>GO ANYWHERE, ANYTIME</p>
                     <div className = "d-flex justify-content-between roundedBorder p-4 border-outline-primary "><span>I'm flexible</span><MdArrowForwardIos/></div>
                 </div>
@@ -58,7 +65,7 @@ class MySearchBar extends React.Component {
             </Col>
             </Row>
         </Container>
-    }
+        )}
 }
  
 export default MySearchBar;

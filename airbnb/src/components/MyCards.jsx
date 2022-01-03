@@ -2,10 +2,10 @@
 
 import React, { Component } from 'react';
 import {Container, Row, Col, Card, ListGroup, ListGroupItem} from 'react-bootstrap'
-import img1 from './1.png'
-import img2 from './2.png'
-import img3 from './3.png'
-import img4 from './4.png'
+import img1 from '../components/assets/card1.png'
+import img2 from '../components/assets/card2.png'
+import img3 from '../components/assets/card3.png'
+import img4 from '../components/assets/card4.png'
 import '../App.css'
 import SingleCard from './SingleCard';
 

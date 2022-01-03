@@ -40,10 +40,10 @@ export default class MyJumbotron extends React.Component {
     render() { 
         return (<>
                 <Container className="jumbotron p-5" style={{backgroundColor:"black" }} >
-                   <div className="position-relative">
+                   <div className="dRelative">
                     <img src= {frontpic} style={{borderRadius:"15px" }} />
                   
-                   <div className="position-absolute"  style={this.jumboTextStyle}>      
+                   <div className="dAbsolute"  style={this.jumboTextStyle}>      
                     <h1>Not sure where to go? Perfect.</h1>
                    <button style={this.buttonStyle} >
                        I'm flexible

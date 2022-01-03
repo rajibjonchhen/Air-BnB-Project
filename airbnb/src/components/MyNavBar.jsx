@@ -1,35 +1,34 @@
 import React, { Component } from 'react';
-import {Navbar, Nav, NavDropdown, Container, Dropdown} from 'react-bootstrap'
+import {Navbar, Nav, NavDropdown, Container, Dropdown, Row, Col} from 'react-bootstrap'
 import {FiGlobe} from 'react-icons/fi'
 import {FaUserCircle} from 'react-icons/fa'
 import {GoThreeBars} from 'react-icons/go'
+
 import brand from './brand.png'
 import '../App.css'
 
 
 class MyNavBar extends React.Component {
+    
     render() { 
-        return (<>
+        return (
+            <Container className='dRelative'>
+
+           
        <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"black", }} variant="dark">
-  <Navbar.Brand href="#home"><img src="https://cdn.freebiesupply.com/images/large/2x/airbnb-logo-white-on-black.png" style={{width:"100px" }}/></Navbar.Brand>  
+  <Navbar.Brand href="#home"><img src="https://cdn.freebiesupply.com/images/large/2x/airbnb-logo-white-on-black.png" style={{width:"120px" }}/></Navbar.Brand>  
   {/*red one "https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png" */}
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse  id="responsive-navbar-nav">
+  <Navbar.Collapse className="d-flex justify-content-between" id="responsive-navbar-nav">
 
+
+    
     <Nav className="ml-auto">
-      <Nav.Link href="#features" className="text-white">Place to stay</Nav.Link>
-      <Nav.Link href="#pricing" className="text-white">Experience</Nav.Link>
-      <Nav.Link href="#pricing" className="text-white">Online Experiences</Nav.Link>
-    </Nav>
-    
-    <Nav>
-    
       <Nav.Link href="#deets" className="text-white">Become a Host</Nav.Link>
       <Nav.Link href="#deets" ><FiGlobe/></Nav.Link>
       <Dropdown>
   <Dropdown.Toggle  id="dropdown-basic" alignLeft>
     <span > < GoThreeBars/> <FaUserCircle/></span>
-
   </Dropdown.Toggle>
 
   <Dropdown.Menu id="dropdown-menu">
@@ -44,7 +43,8 @@ class MyNavBar extends React.Component {
     </Nav>
   </Navbar.Collapse>
 </Navbar>
-        </>);
+
+      </Container>);
     }
 }
 
