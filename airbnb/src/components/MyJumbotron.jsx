@@ -10,7 +10,7 @@ export default class MyJumbotron extends React.Component {
 
     jumboTextStyle ={
         color:"white",
-        top:"30%",
+        top:"0%",
         right:"0",
     }
 
@@ -24,7 +24,7 @@ export default class MyJumbotron extends React.Component {
     
     render() { 
         return (<>
-                <Container className="jumbotron p-5" style={{backgroundColor:"black" }} fluid>
+                <Container className="jumbotron dRelative p-5" style={{backgroundColor:"black" }} fluid>
                     <Row>
                         <Col>
                         

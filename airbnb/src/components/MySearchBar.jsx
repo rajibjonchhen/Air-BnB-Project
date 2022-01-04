@@ -22,7 +22,13 @@ class MySearchBar extends React.Component {
         boxSizing:"borderBox"
     }
     
-
+    buttonStyle = {
+        color:"purple",
+        borderRadius:"30px",
+        fontSize:"20px",
+        fontWeight:"600",
+        padding:"10px 20px"
+    }
 
   
     render() { 
@@ -38,20 +44,21 @@ class MySearchBar extends React.Component {
                     </div>
                 </Col>
             <Col className=" dRelative bg-light d-flex justify-content-between roundedBorder m-0 p-0" >
-                <div className = "d-flex align-items-start flex-column roundedBorder pl-5  p-2 w-100" onClick={(e) =>this.setState({display:!this.state.displayLocation})} >
+
+                <div className = "d-flex align-items-start flex-column roundedBorder pl-5  p-2 w-100" onClick={(e) =>this.setState({display:this.state.displayLocation})} >
                 
                         <span className="fontSize fontBold">Location</span>
                         <input className="fontSize" placeholder='Where are you going?'/>
                     
-                        <div  className=" bg-light roundedBorder m-1 p-4" style={{backgroundColor:"white",position:"absolute",left:"0",top:"75px", zIndex:"10", minWidth:'500px',minHeight:'200px',display:this.state.displayLocation? 'none':'block'}} >
+                        <div  className=" bg-light roundedBorder m-1 p-4" style={{backgroundColor:"white",position:"absolute",left:"0",top:"75px", zIndex:"10", minWidth:'500px',minHeight:'200px',display:this.state.displayLocation?'block':'none'}} >
                             <p>GO ANYWHERE, ANYTIME</p>
-                            <div className = "d-flex justify-content-between roundedBorder p-4 border-outline-primary "><span>I'm flexible</span><MdArrowForwardIos/></div>
+                            <div className = "d-flex justify-content-between roundedBorder p-4 border-outline-primary" style={this.buttonStyle}><span>I'm flexible</span><MdArrowForwardIos/></div>
                         </div>
                 </div>
                 <div className = "d-flex align-items-start flex-column roundedBorder pl-5 p-2 w-100" onClick={(e) =>this.setState({display:!this.state.displayCalender})} >
                     <span className="fontSize fontBold">Check in</span>
                     {/* <span className="fontSize">Add Dates</span> */}
-                    <div className='dAbsolute' style={{backgroundColor:"white",position:"absolute",left:"0",top:"75px", zIndex:"10", minWidth:'500px',minHeight:'200px',display:this.state.displayCalender? 'none':'block'}}>
+                    <div className='dAbsolute' style={{backgroundColor:"white",position:"absolute",left:"100px",top:"75px", zIndex:"10", minWidth:'500px',minHeight:'200px',display:!this.state.displayCalender?'nono':'block'}}>
                         <MyDatePicker/>
                     </div>
                 </div>

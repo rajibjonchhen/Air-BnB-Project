@@ -67,8 +67,8 @@ left:-175px;
     background-color: rgba(255, 255, 255, 0);
   }
 
-  input:active{
-border-color:rgba(255, 255, 255, 0);
+  input:focus{
+outline:none;
   }
   .roundedBorder{
     border-radius:50px;
@@ -105,7 +105,7 @@ border-color:rgba(255, 255, 255, 0);
   .jumbotron{
     background-color: blackß;
     position: relative;
-    min-height: 150vh;
+    min-height: 100vh;
     
   }
 
