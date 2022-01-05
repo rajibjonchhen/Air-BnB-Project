@@ -89,11 +89,13 @@ componentDidMount = () => {
                         </ul>
                     </Row>
                     <Row className='text-white'>{
-                        this.state.destinationArray.slice(0,this.state.displayNumberOfItems).map((list,i) =>(
+                        this.state.destinationArray.slice(0,this.state.displayNumberOfItems
+                            ).map((list,i) =>(
                             <Col sm={6} md={4} lg={3}>
                             <div className='d-flex flex-column my-4 text-left'>
                                 <span>{list[0]}</span>
                                 <span >{list[1]}</span>
+                                {}
                             </div>
                         </Col>
                         ))
