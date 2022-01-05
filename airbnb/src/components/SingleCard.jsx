@@ -6,7 +6,7 @@ import '../App.css'
 class SingleCard extends React.Component {
     render() { 
         return <>
-                <Col className="p-3 ">
+               
                 <Card style={{ minWidth:"15rem", width: '100%', padding:"0", margin:"0px", borderRadius:"15px", overflow:"hidden", border:"none" }}>
                 <Card.Img src={this.props.card.image} alt="Card image" />
                     
@@ -17,7 +17,7 @@ class SingleCard extends React.Component {
                             </p>
                     </div>
                 </Card>
-                </Col>
+                
 
                 
         </>;

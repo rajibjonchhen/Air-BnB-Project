@@ -46,7 +46,7 @@ export default class MyFooter extends React.Component {
     render() { 
         return (<>
                <footer>
-               <Container>
+               <Container fluid>
                    <Row >{
                         this.footer.map((lists,i) =>(
                        <Col xs={12} sm={6} md={6} lg={3}>

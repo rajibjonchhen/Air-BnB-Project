@@ -2,6 +2,8 @@
 
 import React, { Component } from 'react';
 import {Container, Row, Col, Card, ListGroup, ListGroupItem} from 'react-bootstrap'
+import {BsChevronLeft} from 'react-icons/bs'
+import {BsChevronRight} from 'react-icons/bs'
 import img1 from '../components/assets/card1.png'
 import img2 from '../components/assets/card2.png'
 import img3 from '../components/assets/card3.png'
@@ -19,9 +21,16 @@ export default class MyCards extends React.Component {
     ]
     render() { 
         return (
-                   <Container className='MyCards'>
-                        <h1 className='text-white text-left'>Inspiration for your next trip</h1>
-                   <Row>{
+                   <Container className='MyCards text-white' fluid>
+                     <Row className="d-flex justify-conter-between">
+                     <span className='h1 text-white text-left'>Inspiration for your next trip</span>
+                        
+                        <span className="ml-auto">
+                        <span><BsChevronLeft/></span>
+                        <span><BsChevronRight/></span>
+                        </span>
+                     </Row>
+                   <Row className="d-flex "row-cols-1  row-cols-md-2 row-cols-lg-4 style={{flexWrap:"none",overflow:"scroll"}}>{
                        this.cards.map((card,i) =>(
                            <SingleCard card = {card} />
                            ) )
