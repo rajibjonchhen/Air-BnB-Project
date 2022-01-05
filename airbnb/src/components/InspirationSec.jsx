@@ -42,12 +42,38 @@ inspirationListsAdventure=[
 ["Quinault","Washington"],["Skamania","Washington"],["Snowshoe","West Virginia"],["Lake Geneva","Wisconsin"],["Wisconsin Dells","Wisconsin"],["Yellowstone National Park","Wyoming"]]
     
 inspirationListsMountain =[
-    ["Mentone","Alabama"],["Sedona","Arizona"],["Helen","Georgia"],["Pine Mountain","Georgia"],["Stone Mountain","Georgia"],["Island Park","Idaho"],
-    ["Blue Mountains","New South Wales"],["Asheville","North Carolina"],["Blowing Rock","North Carolina"],["Boone","North Carolina"],["Hochatown","Oklahoma"],["Show more"]]
+["Mentone","Alabama"],["Sedona","Arizona"],["Helen","Georgia"],["Pine Mountain","Georgia"],["Stone Mountain","Georgia"],["Island Park","Idaho"],["Blue Mountains","New South Wales"],
+["Asheville","North Carolina"],["Blowing Rock","North Carolina"],["Boone","North Carolina"],["Hochatown","Oklahoma"],["Pigeon Forge","Tennessee"],["Townsend","Tennessee"],["Wears Valley",
+"Tennessee"],["Cabins","West Virginia"]
+]
 
 inspirationListsBeach = [
-    ["Dauphin Island","Alabama"],["Fort Morgan","Alabama"],["Gulf Shores","Alabama"],["Bruny Island","Australia"],["Crescent Head","Australia"],["Gerringong",
-    "Australia"],["Hamilton Island","Australia"],["Lancelin","Australia"],["Melbourne Beach","Australia"],["Moonta Bay","Australia"],["Ocean Grove","Australia"]]
+["Dauphin Island","Alabama"],["Fort Morgan","Alabama"],["Gulf Shores","Alabama"],["Bruny Island","Australia"],["Crescent Head","Australia"],["Gerringong","Australia"],["Hamilton Island",
+"Australia"],["Lancelin","Australia"],["Melbourne Beach","Australia"],["Moonta Bay","Australia"],["Ocean Grove","Australia"],["Majorca","Balearic Islands"],["Big Sur","California"],
+["Bodega Bay","California"],["Cambria","California"],["Cayucos","California"],["Huntington Beach","California"],["La Jolla Shores Beach","California"],["Laguna Beach","California"],["Long Beach",
+"California"],["Malibu","California"],["Mission Beach","California"],["Newport Beach","California"],["Oceanside","California"],["Palm Springs","California"],["Pismo Beach","California"],
+["Santa Cruz","California"],["Santa Monica","California"],["Sea Ranch","California"],["Playa Blanca","Canarias"],["Fuerteventura","Canary Islands"],["Puerto del Carmen","Canary Islands"],
+["Tenerife","Canary Islands"],["Ayia Napa","Cyprus"],["Bethany Beach","Delaware"],["Dewey Beach","Delaware"],["Blackpool","England"],["Isle of Wight","England"],["Newquay","England"],
+["Weymouth","England"],["Albufeira","Faro District"],["Alys Beach","Florida"],["Anna Maria Island","Florida"],["Boca Grande","Florida"],["Bradenton","Florida"],["Cape San Blas","Florida"],
+["Captiva","Florida"],["Clearwater Beach","Florida"],["Cocoa Beach","Florida"],["Daytona Beach","Florida"],["Destin","Florida"],["Englewood","Florida"],["Fort Lauderdale","Florida"],
+["Fort Myers Beach","Florida"],["Fort Walton Beach","Florida"],["Grayton Beach","Florida"],["Gulf of Mexico","Florida"],["Indian Rocks Beach","Florida"],["Islamorada","Florida"],
+["Jacksonville Beach","Florida"],["Key Largo","Florida"],["Madeira Beach","Florida"],["Marathon","Florida"],["Marco Island","Florida"],["Mexico Beach","Florida"],["Miami Beach","Florida"],
+["Miami","Florida"],["Miramar Beach","Florida"],["Naples","Florida"],["Navarre Beach","Florida"],["New Smyrna Beach","Florida"],["Okaloosa Island","Florida"],["Panama City Beach","Florida"],
+["Pensacola Beach","Florida"],["Perdido Key","Florida"],["Rosemary Beach","Florida"],["Saint George Island","Florida"],["Santa Rosa Beach","Florida"],["Sarasota","Florida"],["Seagrove Beach",
+"Florida"],["Seaside","Florida"],["South Beach","Florida"],["St. Augustine Beach","Florida"],["St. Pete Beach","Florida"],["Tampa","Florida"],["West Palm Beach","Florida"],["Bora Bora",
+"French Polynesia"],["Tybee Island","Georgia"],["Honolulu","Hawaii"],["Kailua-Kona","Hawaii"],["Kapalua","Hawaii"],["Kauai","Hawaii"],["Kihei","Hawaii"],["Ko Olina Beach","Hawaii"],[
+"Maui","Hawaii"],["Topsail Island","Hawaii"],["Old Orchard Beach","Maine"],["Wells","Maine"],["Cape Cod","Massachusetts"],["Nantucket","Massachusetts"],["Biloxi","Mississippi"],
+["Avalon","New Jersey"],["Jersey Shore","New Jersey"],["North Wildwood","New Jersey"],["Ocean City","New Jersey"],["Sea Isle City","New Jersey"],["Stone Harbor","New Jersey"],["Hyams Beach",
+"New South Wales"],["Fire Island","New York"],["Montauk","New York"],["Ocean Beach","New York"],["Atlantic Beach","North Carolina"],["Carolina Beach","North Carolina"],["Corolla","North Carolina"],
+["Holden Beach","North Carolina"],["Kitty Hawk","North Carolina"],["Kure Beach","North Carolina"],["Nags Head","North Carolina"],["Ocean Isle Beach","North Carolina"],[
+"Sunset Beach","North Carolina"],["Surf City","North Carolina"],["Wilmington","North Carolina"],["Wrightsville Beach","North Carolina"],["Grand Bend","Ontario"],["Sauble Beach","Ontario"],
+["Wasaga Beach","Ontario"],["Cannon Beach","Oregon"],["Seaside","Oregon"],["Carvoeiro","Portugal"],["Gold Coast","Queensland"],["Moreton Island","Queensland"],["Block Island","Rhode Island"],
+["Puerto Penasco","Sonora"],["Charleston Oceanfront Villas, Folly Beach","South Carolina"],["Edisto Beach","South Carolina"],["Folly Beach","South Carolina"],["Fripp Island","South Carolina"],
+["Isle of Palms","South Carolina"],["Kiawah Island","South Carolina"],["Myrtle Beach","South Carolina"],["Pawleys Island","South Carolina"],["Seabrook Island","South Carolina"],
+["Sullivan's Island","South Carolina"],["Surfside Beach","South Carolina"],["Alicante","Spain"],["Costa Adeje","Spain"],["Costa Del Sol","Spain"],["Fuengirola","Spain"],["Los Cristianos","Spain"],
+["Corpus Christi","Texas"],["Port Aransas","Texas"],["South Padre Island","Texas"],["Surfside Beach","Texas"],["Bournemouth","United Kingdom"],["New Quay","United Kingdom"],["Anglesea","Victoria"],
+["Abersoch","Wales"],["Seabrook","Washington"],["Jurien Bay","Western Australia"]
+]
 inspirationListsPopular = [
 ["Canmore","Alberta"],["Benalmadena","Andalusia"],["Marbella","Andalusia"],["Mijas","Andalusia"],["Prescott","Arizona"],
 ["Scottsdale","Arizona"],["Tucson","Arizona"],["Jasper","Arkansas"],["Mountain View","Arkansas"],["Devonport","Australia"],["Mallacoota","Australia"]]
