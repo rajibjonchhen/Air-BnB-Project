@@ -12,7 +12,7 @@ class InspirationSec extends React.Component {
  
  inspirationListsArt =[
 ["Phoenix","Arizona"],["Hot Springs","Arkansas"],["Los Angeles","California"],["San Diego","California"],["San Francisco","California"],["Barcelona","Catalonia"],
-["Prague","Czechia"],["Washington","District of Columbia"],["Keswick","England"],["London","England"],["Scarborough","England"],["Show more"],
+["Prague","Czechia"],["Washington","District of Columbia"],["Keswick","England"],["London","England"],["Scarborough","England"],
 ['Sherwood Forest','England'],['York','England'],['Paris','France'],['Rhodes','Greece'],['Nashville','Indiana'],['Dublin','Ireland'],['Florence','Italy'],['Rome','Italy'],
 ['Lisbon','Lisbon'],['Grande Isle','Louisiana'],['New Orleans','Louisiana'],['Marthas Vineyard','Massachusetts'],['South Haven','Michigan'],['Duluth','Minnesota'],
 ['Amsterdam','Netherlands'],['New York','New York'],['Nice','Provence-Alpes-Côte d Azur'],['Inverness','Scotland'],['Malaga','Spain'],['Valencia','Spain'],
@@ -22,7 +22,7 @@ class InspirationSec extends React.Component {
     
 inspirationListsAdventure=[
 ["Lake Martin","Alabama"],["Banff","Alberta"],["Nerja","Andalucía"],["Greer","Arizona"],["Lake Havasu City","Arizona"],["Lake Powell","Arizona"],["North Rim","Arizona"],["Payson",
-"Arizona"],["Pinetop-Lakeside","Arizona"],["Red Rock","Arizona"],["Dinner Plain","Australia"],["Show more"],["Streaky Bay","Australia"],["Emerald Lake","British Columbia"],["Vancouver Island",
+"Arizona"],["Pinetop-Lakeside","Arizona"],["Red Rock","Arizona"],["Dinner Plain","Australia"],["Streaky Bay","Australia"],["Emerald Lake","British Columbia"],["Vancouver Island",
 "British Columbia"],["Victoria","British Columbia"],["Idyllwild-Pine Cove","California"],["Mammoth Lakes","California"],["Palm Desert","California"],["Shaver Lake","California"],
 ["South Lake Tahoe","California"],["Cultus Lake","Canada"],["Georgian Bay","Canada"],["Manitoulin Island","Canada"],["Ottawa River","Canada"],["The Blue Mountains","Canada"],
 ["West Kelowna","Canada"],["Gran Canaria","Canary Islands"],["Lanzarote","Canary Islands"],["Castle Hill","Canterbury"],["Aspen","Colorado"],["Colorado Springs","Colorado"],
@@ -77,7 +77,7 @@ componentDidMount = () => {
 
     render() { 
         return (
-            <Container>
+            <Container className='bg-white'>
                     <Row>
                         <ul className='d-flex list-unstyled text-white justify-content-between ' >
                             <li className="bg-secondary mx-2 p-1" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsArt})}}>Destinations for arts & culture</li>
@@ -88,15 +88,11 @@ componentDidMount = () => {
                             <li className="bg-secondary mx-2 p-1" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsUnique})}}>Unique Stays</li>
                         </ul>
                     </Row>
-                    <Row className='text-white'>{
+                    <Row >{
                         this.state.destinationArray.slice(0,this.state.displayNumberOfItems
                             ).map((list,i) =>(
                             <Col sm={6} md={4} lg={3}>
-                            <div className='d-flex flex-column my-4 text-left'>
-                                <span>{list[0]}</span>
-                                <span >{list[1]}</span>
-                                {}
-                            </div>
+                          {i!==11? (<div className='d-flex flex-column my-4 text-left'> <span className="fontBold">{list[0]}</span> <span >{list[1]}</span></div>):(<span>Show more</span>)}
                         </Col>
                         ))
                     }</Row>
