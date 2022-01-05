@@ -20,8 +20,26 @@ class InspirationSec extends React.Component {
 ]
     
 inspirationListsAdventure=[
-    ["Lake Martin","Alabama"],["Banff","Alberta"],["Nerja","Andalucía"],["Greer","Arizona"],["Lake Havasu City","Arizona"],["Lake Powell","Arizona"],
-    ["North Rim","Arizona"],["Payson","Arizona"],["Pinetop-Lakeside","Arizona"],["Red Rock","Arizona"],["Dinner Plain","Australia"],["Show more"]]
+["Lake Martin","Alabama"],["Banff","Alberta"],["Nerja","Andalucía"],["Greer","Arizona"],["Lake Havasu City","Arizona"],["Lake Powell","Arizona"],["North Rim","Arizona"],["Payson",
+"Arizona"],["Pinetop-Lakeside","Arizona"],["Red Rock","Arizona"],["Dinner Plain","Australia"],["Show more"],["Streaky Bay","Australia"],["Emerald Lake","British Columbia"],["Vancouver Island",
+"British Columbia"],["Victoria","British Columbia"],["Idyllwild-Pine Cove","California"],["Mammoth Lakes","California"],["Palm Desert","California"],["Shaver Lake","California"],
+["South Lake Tahoe","California"],["Cultus Lake","Canada"],["Georgian Bay","Canada"],["Manitoulin Island","Canada"],["Ottawa River","Canada"],["The Blue Mountains","Canada"],
+["West Kelowna","Canada"],["Gran Canaria","Canary Islands"],["Lanzarote","Canary Islands"],["Castle Hill","Canterbury"],["Aspen","Colorado"],["Colorado Springs","Colorado"],
+["Denver","Colorado"],["Durango","Colorado"],["Estes Park","Colorado"],["Grand Lake","Colorado"],["Keystone","Colorado"],["Vail","Colorado"],
+["Winter Park","Colorado"],["Salcombe","England"],["Swanage","England"],["Cape Coral","Florida"],["Blue Ridge","Georgia"],["Jekyll Island","Georgia"],["Lake Lanier","Georgia"],["Corfu",
+"Greece"],["McCall","Idaho"],["Clear Lake","Iowa"],["Lough Eske","Ireland"],["Lake Cumberland","Kentucky"],["Portland","Maine"],["South Portland","Maine"],["Deep Creek Lake","Maryland"],
+["Lake Michigan Beach","Michigan"],["Lakeside","Michigan"],["Torch Lake","Michigan"],["Traverse City","Michigan"],["Upper Peninsula of Michigan","Michigan"],["Branson","Missouri"],
+["Lake of the Ozarks","Missouri"],["Big Sky","Montana"],["West Yellowstone","Montana"],["Mount Charleston","Nevada"],["Cloudcroft","New Mexico"],["Red River","New Mexico"],["Bellingen",
+"New South Wales"],["Brunswick Heads","New South Wales"],["Adirondack Mountains","New York"],["Lake Placid","New York"],["Niagara Falls","New York"],["Bald Head Island","North Carolina"],
+["Bryson City","North Carolina"],["Emerald Isle","North Carolina"],["Lake Gaston","North Carolina"],["Lake Lure","North Carolina"],["Lake Norman of Catawba","North Carolina"],
+["Mount Airy","North Carolina"],["Mountain","North Carolina"],["Oak Island","North Carolina"],["Geneva-on-the-Lake","Ohio"],["Medicine Park","Oklahoma"],["Turner Falls",
+"Oklahoma"],["Algonquin Park","Ontario"],["Muskoka Lakes","Ontario"],["Tobermory","Ontario"],["Bend","Oregon"],["Crater Lake","Oregon"],["Northern Oregon Coast Range","Oregon"],
+["Sunriver","Oregon"],["Lake Harmony","Pennsylvania"],["Mount Pocono","Pennsylvania"],["Mont-Tremblant","Quebec"],["Aviemore","Scotland"],["Isle of Mull","Scotland"],["Robe","South Australia"],
+["Mountain Rest","South Carolina"],["St Helens","Tasmania"],["Big Bend National Park","Texas"],["Canyon Lake","Texas"],["Lake Austin","Texas"],["Lake Buchanan","Texas"],["Betws-y-Coed",
+"United Kingdom"],["Filey","United Kingdom"],["Fort Williams","United Kingdom"],["Loch Lomond","United Kingdom"],["Port Isaac","United Kingdom"],["Moab","Utah"],["Mount Zion",
+"Utah"],["Moraira","Valencian Community"],["Inverloch","Victoria"],["Metung","Victoria"],["Mount Buller","Victoria"],["Port Campbell","Victoria"],["Wilsons Promontory","Victoria"],
+["Shenandoah","Virginia"],["Smith Mountain Lake","Virginia"],["Snowdon","Wales"],["Lake Chelan","Washington"],["Lake Crescent","Washington"],["Lake Quinault","Washington"],
+["Quinault","Washington"],["Skamania","Washington"],["Snowshoe","West Virginia"],["Lake Geneva","Wisconsin"],["Wisconsin Dells","Wisconsin"],["Yellowstone National Park","Wyoming"]]
     
 inspirationListsMountain =[
     ["Mentone","Alabama"],["Sedona","Arizona"],["Helen","Georgia"],["Pine Mountain","Georgia"],["Stone Mountain","Georgia"],["Island Park","Idaho"],
