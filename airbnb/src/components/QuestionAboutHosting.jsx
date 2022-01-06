@@ -18,11 +18,11 @@ export default class QuestionAboutHosting extends React.Component {
     render() { 
 
        
-        return <Container className="p-3 m-0 mt-5" style={{overflow:"hidden", borderRadius:"15px"}}fluid>
-            <Row>
+        return <Container  className="mt-5" fluid>
+            <Row >
                 <Col>
-                <div className="dRelative">
-                    <img className="w-100" src="https://miro.medium.com/max/810/1*NZaYyfGglb54xTe8EOBHLQ.jpeg" fluid></img>
+                <div className="dRelative"  style={{overflow:"hidden", borderRadius:"15px"}}>
+                    <img className="w-100" src="https://miro.medium.com/max/810/1*NZaYyfGglb54xTe8EOBHLQ.jpeg" ></img>
                     <div className="text-white text-left" style={{position:"absolute",top:"50px",left:"50px"}}>
                         <p className="h1 text-left" style={{fontSize:"80px",fontWeight:"800"}}>Questions <br/> about <br/> hosting?</p>
                         <button style={this.askBtnStyle}>Ask a Superhost</button>
