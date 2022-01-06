@@ -22,7 +22,7 @@ export default class MyCards extends React.Component {
     render() { 
         return (
                    <Container className='MyCards text-white' fluid>
-                     <Row className="d-flex justify-conter-between">
+                     <Row className="d-flex justify-conter-between" >
                      <span className='h1 text-white text-left'>Inspiration for your next trip</span>
                         
                         <span className="ml-auto">

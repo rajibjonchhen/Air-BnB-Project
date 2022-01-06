@@ -12,6 +12,7 @@ import MyFooter from './components/MyFooter';
 import MySearchBar from './components/MySearchBar';
 import InspirationSec from './components/InspirationSec';
 import DiscoveryBox from './components/DiscoveryBox';
+import QuestionAboutHosting from './components/QuestionAboutHosting';
 
 
 
@@ -19,20 +20,21 @@ function App() {
 
  
   return (
-    <Container className="App"  fluid>
+    <Container className="App m-0 p-0"  fluid>
 <Row>
   <Col>
-  <div className="bg-white">
+  <div  style={{padding:"0 5%",backgroundColor:"black"}}>
   <MyNavBar/>
 <MySearchBar/>
 <MyJumbotron/>
   </div>
-<div className="bg-white">
+<div className="bg-white" style={{padding:"0 5%"}}>
 <MyCards/>
 <DiscoveryBox/>
+<QuestionAboutHosting/>
 <InspirationSec/>
-<MyFooter/>
 </div>
+<MyFooter/>
   </Col>
 </Row>
    

@@ -46,10 +46,10 @@ export default class MyFooter extends React.Component {
     render() { 
         return (<>
                <footer>
-               <Container fluid>
-                   <Row >{
+               <Container style={{backgroundColor:"rgb(247,247,247)"}} fluid>
+                   <Row  style={{margin:"0 4%"}}>{
                         this.footer.map((lists,i) =>(
-                       <Col xs={12} sm={6} md={6} lg={3}>
+                       <Col xs={12} sm={6} md={6} lg={4} xl={3}>
                        <ul key={lists} className="list-unstyled text-left">{
                            lists.map(item =>(
                                <li key={item}className="my-3">{item}</li>
@@ -59,7 +59,7 @@ export default class MyFooter extends React.Component {
                         ))
                        }</Row>
                        <hr/>
-                       <Row className="d-flex justify-content-between">{
+                       <Row style={{margin:"0 4%"}} className="d-flex justify-content-between" >{
                            this.footerFootLeft.map(lists =>(
                                <ul key={lists} className="list-unstyled text-left d-flex">{
                                    lists.map(list => (
