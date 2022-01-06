@@ -30,7 +30,6 @@ export default class MyJumbotron extends React.Component {
                         
                    <div className="dRelative">
                     <img className="w-100" src= {frontpic} style={{borderRadius:"15px" }} />
-                  
                    <div className="dAbsolute"  style={this.jumboTextStyle}>      
                     <h1>Not sure where to go? Perfect.</h1>
                    <button style={this.buttonStyle} >
@@ -48,7 +47,7 @@ export default class MyJumbotron extends React.Component {
                         <div className ="w-100" >
                         <p className ="h3">Introducing</p>
                         <h1>Airbnb <br/> Gift Cards</h1>
-                        <button className = "roundedBorder text-white p-2 w-25" style={{backgroundColor:"black"}} >
+                        <button className = "roundedBorder text-white p-2" style={{backgroundColor:"black",minWidth:"150px"}} >
                        shop now
                    </button>
                     </div>

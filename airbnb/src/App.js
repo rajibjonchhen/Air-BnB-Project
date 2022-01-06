@@ -19,18 +19,20 @@ function App() {
 
  
   return (
-    <Container className="App" style={{backgroundColor:"black"}} fluid>
+    <Container className="App"  fluid>
 <Row>
   <Col>
-  
-
+  <div className="bg-white">
   <MyNavBar/>
 <MySearchBar/>
 <MyJumbotron/>
+  </div>
+<div className="bg-white">
 <MyCards/>
 <DiscoveryBox/>
 <InspirationSec/>
-<MyFooter />
+<MyFooter/>
+</div>
   </Col>
 </Row>
    

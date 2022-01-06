@@ -136,9 +136,17 @@ footer li{
   font-size: 15px;
 }
 footer li:first-of-type {
-  font-size: 15px;
-  font-weight: 600;
+font-size: 15px;
+font-weight: 600;
 border-radius:50px;
 
 }
 
+.pointer{
+  cursor: pointer;
+}
+
+.hoverGrey:hover{
+  background-color: rgba(128, 128, 128, 0.11);
+  border-radius: 10px;
+}

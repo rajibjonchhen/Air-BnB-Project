@@ -6,7 +6,9 @@ import '../App.css'
 class InspirationSec extends React.Component {
  state = {
      destinationArray:[],
-     displayNumberOfItems:"12"
+     displayNumberOfItems:"12",
+     displayShowMore:"true",
+     
  }   
 
  
@@ -72,28 +74,32 @@ inspirationListsUnique = [
 
 componentDidMount = () => {
     this.setState({destinationArray:this.inspirationListsArt})
+
 }
 
 
     render() { 
         return (
-            <Container className='bg-white'>
-                    <Row>
-                        <ul className='d-flex list-unstyled text-white justify-content-between ' >
-                            <li className="bg-secondary mx-2 p-1" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsArt})}}>Destinations for arts & culture</li>
-                            <li className="bg-secondary mx-2 p-1" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsAdventure})}}>Destinations for outdoor adventure</li>
-                            <li className="bg-secondary mx-2 p-1" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsMountain})}}>Mountain cabins</li>
-                            <li className="bg-secondary mx-2 p-1" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsBeach})}}>Beach destinations</li>
-                            <li className="bg-secondary mx-2 p-1" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsPopular})}}>Popular destinations</li>
-                            <li className="bg-secondary mx-2 p-1" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsUnique})}}>Unique Stays</li>
+            <Container className='bg-white'fluid>
+                    <Row style={{overflow:"scroll"}}>
+                        <ul className='d-flex list-unstyled  justify-content-between ' >
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsArt})}}>Destinations for arts & culture</li>
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsAdventure})}}>Destinations for outdoor adventure</li>
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsMountain})}}>Mountain cabins</li>
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsBeach})}}>Beach destinations</li>
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsPopular})}}>Popular destinations</li>
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.setState({destinationArray:this.inspirationListsUnique})}}>Unique Stays</li>
                         </ul>
                     </Row>
                     <Row >{
                         this.state.destinationArray.slice(0,this.state.displayNumberOfItems
                             ).map((list,i) =>(
-                            <Col sm={6} md={4} lg={3}>
-                          {i!==11? (<div className='d-flex flex-column my-4 text-left'> <span className="fontBold">{list[0]}</span> <span >{list[1]}</span></div>):(<span>Show more</span>)}
-                        </Col>
+                            <Col xs={6} sm={4} md={4} lg={3} >
+                          {i!==11? (<div className='d-flex flex-column my-4 text-left'> <span style={{fontSize:"14px"}}>{list[0]}</span> <span style={{fontSize:"14px",color:"grey"}}>{list[1]}</span></div>):(<div className='d-flex flex-column my-4 text-left'
+                           style={{display:this.state.displayNumberOfItems<12? "block":"none"}} 
+                          onClick = {(e) => {this.setState({displayNumberOfItems:this.state.destinationArray.length, displayShowMore:"false"})}}>
+                               <span style={{fontSize:"14px",fontWeight:"600",textDecoration:"underline"}}>Show more</span></div>)}
+                          </Col>
                         ))
                     }</Row>
                 </Container>

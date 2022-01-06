@@ -14,7 +14,7 @@ export default class DiscoveryBox extends React.Component {
     render() { 
         return <Container className='text-white' fluid
         >
-            <h1>Discover Airbnb Experiences</h1>
+            <h1 className="text-left">Discover Airbnb Experiences</h1>
             <Row>{this.discoveryCards.map((card,i) =>(<SingleDiscoveryCard key={i} card={card}/>))}</Row>
         </Container>;
     }
