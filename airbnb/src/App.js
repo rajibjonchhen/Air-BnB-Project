@@ -23,8 +23,8 @@ function App() {
     <Container className="App m-0 p-0"  fluid>
 <Row>
   <Col>
-  <div  style={{padding:"0 5%",backgroundColor:"black"}}>
   <MyNavBar/>
+  <div  style={{padding:"0 5%",backgroundColor:"black"}}>
 <MySearchBar/>
 <MyJumbotron/>
   </div>

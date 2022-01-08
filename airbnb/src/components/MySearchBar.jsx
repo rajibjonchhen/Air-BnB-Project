@@ -61,7 +61,7 @@ displayToggle (section){
   }
     render() { 
         return (
-            <Container  className="searchBar dRelative px-5" style={{margin:"10px auto", width:"900px"}}>
+            <Container  className="searchBar dRelative px-5" style={{margin:"100px auto 10px", width:"900px"}}>
           
             <Row className="d-flex  flex-column justify-content-center" >
                 <Col className="d-flex  justify-content-around "> 
