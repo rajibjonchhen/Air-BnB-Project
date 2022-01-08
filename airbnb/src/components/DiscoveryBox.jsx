@@ -8,8 +8,8 @@ import img2 from '../components/assets/discoveryimage2.png'
 export default class DiscoveryBox extends React.Component {
 
     discoveryCards = [
-        {heading:" on your trip", btnText:"Experience" ,image:img1},
-        {heading:"from home", btnText:"Online Experience" ,image:img2}
+        {heading:" on your trip", btnText:"Experience" ,image:img2},
+        {heading:"from home", btnText:"Online Experience" ,image:img1}
     ]
     render() { 
         return <Container className='text-white' fluid

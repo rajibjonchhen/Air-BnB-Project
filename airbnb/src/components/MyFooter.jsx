@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import {Container, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap'
 import '../App.css'
 import { FaFacebookF, FaTwitter, FaInstagramSquare } from "react-icons/fa";
+import { FiGlobe } from "react-icons/fi";
 // import { TiSocialInstagram} from "react-icons/Ti";
 
 export default class MyFooter extends React.Component {
@@ -38,10 +39,9 @@ export default class MyFooter extends React.Component {
         "Airbnb Luxe"],
     ]
 
-    footerFootLeft = [
+    footerFoot = [
         [" © 2021 Airbnb, Inc.","· Privacy","· Terms","· Sitemap"],
-        ["  English (US)"," € EUR", <FaFacebookF/>, <FaTwitter/> ,<FaInstagramSquare/>],
-    ]
+        [ <FiGlobe/>,"English (US)"," € EUR", <FaFacebookF/>, <FaTwitter/> ,<FaInstagramSquare/>]]
 
     render() { 
         return (<>
@@ -60,8 +60,8 @@ export default class MyFooter extends React.Component {
                        }</Row>
                        <hr/>
                        <Row style={{margin:"0 4%"}} className="d-flex justify-content-between" >{
-                           this.footerFootLeft.map(lists =>(
-                               <ul key={lists} className="list-unstyled text-left d-flex">{
+                           this.footerFoot.map(lists =>(
+                               <ul key={lists} className=" text-left list-unstyled text-left d-flex">{
                                    lists.map(list => (
                                        <li key={list} className="mx-2">{list}</li>
                                        ))
