@@ -106,15 +106,18 @@ outline:none;
   }
 
   .shadowOnRightEdge {
-    box-shadow:   6px 0px 8px 0px rgb(222,222,222)
+    box-shadow:   6px 0px 8px 0px rgb(222,222,222);
+    background-color:white !important;
   }
 
   .shadowOnBothEdge {
-    box-shadow: 6px 0px 8px 0px rgb(222,222,222),  -6px 0px 8px 0px rgb(222,222,222)
+    box-shadow: 6px 0px 8px 0px rgb(222,222,222),  -6px 0px 8px 0px rgb(222,222,222);
+    background-color:white !important;
   }
 
   .shadowOnLeftEdge {
-    box-shadow:  -6px 0px 8px 0px rgb(222,222,222)
+    box-shadow:  -6px 0px 8px 0px rgb(222,222,222);
+    background-color:white !important;
   } 
 
   /* from jumbotron */

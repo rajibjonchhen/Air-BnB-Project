@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import {Container,Row, Col} from 'react-bootstrap'
 import jumboCard from '../jumboCard.png'
-import frontpic from '../frontpic.png'
+import jumboPic from './assets/jumboPic.png'
 import '../App.css'
 
 
@@ -11,7 +11,7 @@ export default class MyJumbotron extends React.Component {
     jumboTextStyle ={
         position:"absolute",
         color:"white",
-        bottom:"5%",
+        bottom:"20%",
         left:"25%"
     }
 
@@ -30,7 +30,7 @@ export default class MyJumbotron extends React.Component {
                         <Col>
                         
                    <div className="dRelative">
-                    <img className="w-100" src= {frontpic} style={{borderRadius:"15px" }} />
+                    <img className="w-100" src= {jumboPic} style={{borderRadius:"15px" }} />
                    <div  style={this.jumboTextStyle}>      
                     <h1>Not sure where to go? Perfect.</h1>
                    <button style={this.buttonStyle} >
