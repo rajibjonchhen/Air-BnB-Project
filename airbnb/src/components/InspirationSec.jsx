@@ -89,27 +89,28 @@ componentDidUpdate(prevProps, prevState) {
 
     render() { 
         return (
-            <Container className='bg-white mt-5'fluid>
+            <Container className='bg-white mt-5 'fluid>
                 <p className="h3 text-left mt-5 mb-3">Inspiration for future getaways</p>
-                    <Row style={{overflow:"scroll", fontSize:"15px"}} >
+                    <Row style={{position:'relative', overflow:"scroll", fontSize:"15px", marginBottom:'0'}} >
                         <ul className='d-flex list-unstyled  justify-content-between'  >
-                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsArt)}}>Destinations for arts & culture</li>
-                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsAdventure)}}>Destinations for outdoor adventure</li>
-                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsMountain)}}>Mountain cabins</li>
-                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsBeach)}}>Beach destinations</li>
-                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsPopular)}}>Popular destinations</li>
-                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsUnique)}}>Unique Stays</li>
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsArt)}}>Destinations for arts & culture <hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsArt? 'block':'none'}}/></li>
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsAdventure)}}>Destinations for outdoor adventure <hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsAdventure? 'block':'none'}}/></li>
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsMountain)}}>Mountain cabins <hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsMountain? 'block':'none'}}/></li>
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsBeach)}}>Beach destinations <hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsBeach? 'block':'none'}}/></li>
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsPopular)}}>Popular destinations <hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsPopular? 'block':'none'}}/></li>
+                            <li className=" mx-2 p-2 pointer hoverGrey" onClick = {(e) => {this.passArray(this.inspirationListsUnique)}}>Unique Stays <hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsUnique? 'block':'none'}}/></li>
                         </ul>
+                    <hr style={{position:'absolute', zIndex:'10', top:'33px', left:'15px', border:'1px solid rgb(225,225,225)', width:'83%'}}/>
                     </Row>
-                    <hr/>
                     <Row>{
                         this.state.destinationArray.slice(0,this.state.displayNumberOfItems).map((list,i) =>(<>
-                            <Col xs={6} sm={4} md={3} lg={3} xl={3}>{
+                            <Col   key={i.toString()} xs={6} sm={4} md={3} lg={3} xl={3}>{
                                 
-                            i===11&&this.state.displayNumberOfItems==="12"? (<div className='d-flex flex-column my-4 text-left pointer'
+                            i===11&&this.state.displayNumberOfItems==="12"? (<div  key={i} className='d-flex flex-column my-4 text-left pointer'
                             style={{display:this.state.displayShowMore? "block":"none"}} 
                             onClick = {(e) => {this.setState({displayNumberOfItems:this.state.destinationArray.length, displayShowMore:"false"})}}>
-                                <span style={{fontSize:"14px",fontWeight:"600",textDecoration:"underline"}}>Show more</span></div> ):(<div className='d-flex flex-column my-4 text-left'>
+                            
+                            <span style={{fontSize:"14px",fontWeight:"600",textDecoration:"underline"}}>Show more</span></div> ):(<div className='d-flex flex-column my-4 text-left'>
                             <span style={{fontSize:"14px"}}>{list[0]}</span> 
                             <span style={{fontSize:"14px",color:"grey"}}>{list[1]}</span>
                             </div>)

@@ -26,7 +26,7 @@ class MyNavBar extends React.Component {
                               <Nav.Link href="#deets" className="text-white">Become a Host</Nav.Link>
                               <Nav.Link href="#deets" ><FiGlobe/></Nav.Link>
                               <Dropdown>
-                                  <Dropdown.Toggle  id="dropdown-basic" alignLeft>
+                                  <Dropdown.Toggle  id="dropdown-basic" >
                                     <span > < GoThreeBars/> <FaUserCircle/></span>
                                   </Dropdown.Toggle>
 
@@ -57,7 +57,7 @@ class MyNavBar extends React.Component {
                               <Nav.Link href="#deets" className="text-dark">Become a Host</Nav.Link>
                               <Nav.Link href="#deets" ><FiGlobe/></Nav.Link>
                               <Dropdown>
-                                  <Dropdown.Toggle  id="dropdown-basic" alignLeft>
+                                  <Dropdown.Toggle  id="dropdown-basic">
                                     <span > < GoThreeBars/> <FaUserCircle/></span>
                                   </Dropdown.Toggle>
 

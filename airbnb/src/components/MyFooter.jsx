@@ -49,7 +49,7 @@ export default class MyFooter extends React.Component {
                <Container style={{backgroundColor:"rgb(247,247,247)"}} fluid>
                    <Row  style={{margin:"0 4%"}}>{
                         this.footer.map((lists,i) =>(
-                       <Col xs={12} sm={6} md={6} lg={4} xl={3}>
+                       <Col  key={lists} xs={12} sm={6} md={6} lg={4} xl={3}>
                        <ul key={lists} className="list-unstyled text-left">{
                            lists.map(item =>(
                                <li key={item}className="my-3">{item}</li>

@@ -30,9 +30,9 @@ export default class MyCards extends React.Component {
                         <span><BsChevronRight/></span>
                         </span>
                      </Row>
-                   <Row className="d-flex "row-cols-1  row-cols-md-2 row-cols-lg-4 style={{flexWrap:"none",overflow:"scroll"}}>{
+                   <Row className="d-flex row-cols-1  row-cols-md-2 row-cols-lg-4" style={{flexWrap:"none",overflow:"scroll"}}>{
                        this.cards.map((card,i) =>(
-                           <SingleCard card = {card} />
+                           <SingleCard key={i} card = {card} />
                            ) )
                         }</Row>
                    </Container>

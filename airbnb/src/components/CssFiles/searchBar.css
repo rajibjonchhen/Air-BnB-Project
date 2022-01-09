@@ -8,3 +8,7 @@
     font-size: 14px;
     color:grey;
 }
+
+.searchSec:hover .underline{
+width:15px;
+}
