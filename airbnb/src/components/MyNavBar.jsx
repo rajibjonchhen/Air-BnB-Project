@@ -14,7 +14,7 @@ class MyNavBar extends React.Component {
     }
     render() { 
         return (
-            <Container fluid  style={{position:'fixed',zIndex:'5',marginBottom:'20px'}}>
+            <Container fluid  style={{position:'fixed',zIndex:'5'}}>
               <Row style={{padding:"0 5%",backgroundColor:"black", display:!this.state.isScrolled? 'block':'none'}}>
                 <Col>
                   <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"black", }} variant="dark">

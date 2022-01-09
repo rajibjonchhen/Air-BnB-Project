@@ -21,16 +21,16 @@ export default class MyCards extends React.Component {
     ]
     render() { 
         return (
-                   <Container className='MyCards text-white' fluid>
+                   <Container className='MyCards' fluid>
                      <Row className="d-flex justify-conter-between" >
-                     <span className='h1 text-white text-left'>Inspiration for your next trip</span>
+                     <span className='h1 text-left'>Inspiration for your next trip</span>
                         
                         <span className="ml-auto">
                         <span><BsChevronLeft/></span>
                         <span><BsChevronRight/></span>
                         </span>
                      </Row>
-                   <Row className="d-flex row-cols-1  row-cols-md-2 row-cols-lg-4" style={{flexWrap:"none",overflow:"scroll"}}>{
+                   <Row className="d-flex no-wrap row-cols-1  row-cols-md-2 row-cols-lg-4" style={{flexWrap:"none",overflow:"scroll"}}>{
                        this.cards.map((card,i) =>(
                            <SingleCard key={i} card = {card} />
                            ) )

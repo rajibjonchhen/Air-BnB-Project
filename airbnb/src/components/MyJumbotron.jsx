@@ -25,7 +25,7 @@ export default class MyJumbotron extends React.Component {
     
     render() { 
         return (<>
-                <Container className="jumbotron dRelative p-5" style={{backgroundColor:"black" }} fluid>
+                <Container className="jumbotron p-5" style={{backgroundColor:"black" ,position:"relative"}} fluid>
                     <Row>
                         <Col>
                         
@@ -42,7 +42,7 @@ export default class MyJumbotron extends React.Component {
                 </Col>
                     </Row>
                
-                    <Row>
+                    <Row className="dAbsolute" style={{bottom:"-400px",position:"absolute"}}>
                         <Col>
                         <div className ="jumboPoster d-flex align-items-center"  style={{backgroundColor:"rgb(241,241,241)"}} >
                         <div className ="w-100" >

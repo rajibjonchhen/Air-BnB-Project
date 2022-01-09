@@ -80,7 +80,7 @@ displayToggle (section){
           
             <Row className="d-flex  flex-column justify-content-center" >
                 <Col className="d-flex  justify-content-around "> 
-                    <div className="d-flex text-white text-left" style={{position:'absolute',zIndex:"6", bottom:"0", marginBottom:"45px", fontSize:"17px"}}>
+                    <div className="d-flex text-white text-left" style={{position:'absolute',zIndex:"6", bottom:"-40px", marginBottom:"45px", fontSize:"17px"}}>
                         <p href="#features" className="searchSec mx-3" >Place to stay <hr className='underline' style={{border:'1px solid white',width:"15px"}}/> </p>
                         <p href="#pricing" className="searchSec mx-3">Experience <hr className='underline' style={{border:'1px solid white',width:"15px"}}/></p>
                         <p href="#pricing" className="searchSec mx-3">Online Experiences <hr className='underline' style={{border:'1px solid white',width:"15px"}}/></p>
