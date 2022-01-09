@@ -1,5 +1,7 @@
 import React, { Component, useState } from 'react';
 import DatePicker from "react-datepicker";
+
+
 import {DateRangePicker, SingleDatePicker,DayPickerRangeController} from "react-date-range";
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
@@ -9,7 +11,9 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 
 
 export default class MyDatePicker extends Component {
-  handleSelect(ranges){
+
+
+    handleSelect(ranges){
     console.log(ranges);
     {
     //   selection: {

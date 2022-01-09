@@ -1,0 +1,10 @@
+
+.guestCounterStyle span:first-of-type{
+    font-size: 16px;
+    font-weight: bold;
+    color:black;
+}
+.guestCounterStyle span:last-of-type{
+    font-size: 14px;
+    color:grey;
+}

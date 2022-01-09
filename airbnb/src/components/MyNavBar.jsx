@@ -10,7 +10,7 @@ import '../App.css'
 
 class MyNavBar extends React.Component {
     state = {
-      isScrolled : true,
+      isScrolled : false,
     }
     render() { 
         return (

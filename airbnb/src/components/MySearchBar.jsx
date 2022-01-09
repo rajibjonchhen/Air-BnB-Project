@@ -4,12 +4,15 @@ import {GoSearch} from 'react-icons/go'
 import {MdArrowForwardIos} from 'react-icons/md'
 import MyDatePicker from './MyDatePicker';
 import '../App.css'
+import '../components/CssFiles/searchBar.css'
+import GuestCounter from './GuestCounter'
 
 class MySearchBar extends React.Component {
 
     state = {
         isClicked:'0',
-        displayToggle:"0"
+        displayToggle:"0",
+        guestCount:0
        
     }
 
@@ -59,13 +62,21 @@ displayToggle (section){
     }
     
   }
+
+  guestCounter (change){
+    if(change=='+'){
+        this.setState({guestCounter:this.state.guestCount+1})
+    }else if(this.state.guestCount!==0){
+        this.setState({guestCounter:this.state.guestCount-1})
+    }
+  }
     render() { 
         return (
-            <Container  className="searchBar dRelative px-5" style={{margin:"100px auto 10px", width:"900px"}}>
+            <Container  className="searchBar dRelative px-5" style={{margin:"110px auto 10px", width:"900px", padding:'30px'}}>
           
             <Row className="d-flex  flex-column justify-content-center" >
                 <Col className="d-flex  justify-content-around "> 
-                    <div className="d-flex text-white text-left" style={{position:'absolute',zIndex:"3", bottom:"0", marginBottom:"35px", fontSize:"17px"}}>
+                    <div className="d-flex text-white text-left" style={{position:'absolute',zIndex:"6", bottom:"0", marginBottom:"45px", fontSize:"17px"}}>
                         <p href="#features" className="mx-3" >Place to stay</p>
                         <p href="#pricing" className="mx-3">Experience</p>
                         <p href="#pricing" className="mx-3">Online Experiences</p>
@@ -139,45 +150,53 @@ displayToggle (section){
                                         right:"0",
                                         top:"75px", 
                                         zIndex:"10", 
-                                        minWidth:'500px',
-                                        minHeight:'150px',
+                                        minWidth:'400px',
+                                       
                                         display:this.state.displayToggle==='add guest'? 'block':'none'
-                            }} >
+                            }}>
                            
-                                <ul className="list-unstyled ">
-                                        <li>
-                                        Adults
-                                        </li>
-                                        <li>
-                                        Ages 13 or above
-                                        </li>
+                               
+                                        <div className='d-flex align-items-center justify-content-between'>
+                                            <div className='d-flex flex-column text-left guestCounterStyle'>
+                                                <span >Adults</span>
+                                                <span>Ages 13 or above</span>
+                                            </div>
+                                            <GuestCounter guestCounter = {this.guestCounter} NumbOfGuest={this.state.guestCount}/>
+                                        </div>
+                                        <hr/>
+                                        
+
+                                        <div className='d-flex align-items-center justify-content-between '>
+                                            <div className='d-flex flex-column text-left guestCounterStyle'>
+                                                <span >Children</span>
+                                                <span> Ages 2–12</span>
+                                            </div>
+                                            <GuestCounter guestCounter = {this.guestCounter} NumbOfGuest={this.state.guestCount}/>
+                                        </div>
+
                                         <hr/>
 
-                                        <li>
-                                        Children
-                                        </li>
-                                        <li>
-                                        Ages 2–12
-                                        </li>
-                                        <hr/>
+                                        <div className='d-flex align-items-center justify-content-between'>
+                                            <div className='d-flex flex-column text-left guestCounterStyle'>
+                                                <span >Infants</span>
+                                                <span> Under 2</span>
+                                            </div>
+                                        <GuestCounter guestCounter = {this.guestCounter} NumbOfGuest={this.state.guestCount}/>
+                                        </div>
 
-                                        <li>
-                                        Infants
-                                        </li>
-                                        <li>
-                                        Under 2
-                                        </li>
                                         <hr/>
-
-                                        <li>
-                                        Pets
-                                        </li>
-                                        <li>
-                                        Bringing an assistance animal?
-                                        </li>
-                                <hr/>
-                                </ul>
-                                <p>
+                                        
+                                        <div className='d-flex align-items-center justify-content-between'>
+                                            <div className='d-flex flex-column text-left guestCounterStyle'>
+                                                <span>Pets</span>
+                                                <span style={{fontDecoration:'underline', fontWeight:'bold',color:'black'}}> Bringing an assistance animal?</span>
+                                            </div>
+                                            <GuestCounter guestCounter = {this.guestCounter} NumbOfGuest={this.state.guestCount}/>
+                                        </div>
+                                       
+                                    <hr/>
+                                
+                                <p style={{fontSize:'13px'}}>
                                 If you're lucky enough to have more than 2 pets <br/> with you, be sure to let your host know.
                                 </p>
 

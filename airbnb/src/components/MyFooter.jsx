@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 import {Container, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap'
 import '../App.css'
 import { FaFacebookF, FaTwitter, FaInstagramSquare } from "react-icons/fa";
