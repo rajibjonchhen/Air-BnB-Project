@@ -1,3 +1,8 @@
+footer .footerElements hr{
+    display:none;
+}
+
+
 /* Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
  */
@@ -16,19 +21,22 @@ No media query since this is the default in Bootstrap
 @media (max-width: 1127px) { 
     footer ul {
         display:flex;
+        flex-wrap: wrap; 
     }
+    
+    .footerElements li {
+            
+            min-width: 25vmax;
+          }
+    
 
-    footerElements{
-    display:flex;
-    flex-direction: column;
-    }
-    footer hr{
+    footer .footerElements hr{
         display:block;
     }
  }
 
  @media (min-width: 1128px) { 
-    footer hr{
+    footer .footerElements hr{
         display:none;
     }
 }

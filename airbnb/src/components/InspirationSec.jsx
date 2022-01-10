@@ -91,8 +91,9 @@ componentDidUpdate(prevProps, prevState) {
         return (
             <Container className='bg-white mt-5 'fluid>
                 <p className="h3 text-left mt-5 mb-3">Inspiration for future getaways</p>
-                    <Row style={{position:'relative', overflow:"scroll", fontSize:"15px", marginBottom:'0'}} >
-                        <ul className='d-flex list-unstyled  justify-content-between'  >
+                    <Row style={{position:'relative', overflow:"scroll", fontSize:"15px", marginBottom:'0',"&::-webkit-scrollbar-thumb":"red red"}} >
+                        <ul className='d-flex list-unstyled  justify-content-between' style={{overflow: "scroll", whiteSpace: "nowrap"
+}}  >   
                             <li className=" mx-2 pointer " onClick = {(e) => {this.passArray(this.inspirationListsArt)}}><span className="h p-3 hoverGrey">Destinations for arts & culture</span> <hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsArt? 'block':'none'}}/></li>
                             <li className=" mx-2 pointer" onClick = {(e) => {this.passArray(this.inspirationListsAdventure)}}><span className="h p-3 hoverGrey">Destinations for outdoor adventure </span><hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsAdventure? 'block':'none'}}/></li>
                             <li className=" mx-2 pointer" onClick = {(e) => {this.passArray(this.inspirationListsMountain)}}><span className="h p-3 hoverGrey">Mountain cabins </span><hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsMountain? 'block':'none'}}/></li>
@@ -100,7 +101,7 @@ componentDidUpdate(prevProps, prevState) {
                             <li className=" mx-2 pointer" onClick = {(e) => {this.passArray(this.inspirationListsPopular)}}><span className="h p-3 hoverGrey">Popular destinations </span><hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsPopular? 'block':'none'}}/></li>
                             <li className=" mx-2 pointer" onClick = {(e) => {this.passArray(this.inspirationListsUnique)}}><span className="h p-3 hoverGrey">Unique Stays </span><hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsUnique? 'block':'none'}}/></li>
                         </ul>
-                    <hr style={{position:'absolute', zIndex:'10', top:'25px', left:'7px', border:'1px solid rgb(225,225,225)', width:'92%'}}/>
+                    <hr style={{position:'absolute', zIndex:'2', top:'25px', left:'7px', border:'1px solid rgb(225,225,225)', width:'92%'}}/>
                     </Row>
                     <Row>{
                         this.state.destinationArray.slice(0,this.state.displayNumberOfItems).map((list,i) =>(<>
