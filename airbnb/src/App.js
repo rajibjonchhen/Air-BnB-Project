@@ -24,11 +24,7 @@ class App extends React.Component {
   }
 // 
 listenScrollEvent = e => {
-  if (window.scrollY > 250) {
-      this.setState({isScrolled: 'true'})
-      } else if(window.scrollY < 0){
-        this.setState({isScrolled: 'false'})
-      }
+      this.setState({isScrolled: window.scrollY>=400})
   }
   
   componentDidMount() {
