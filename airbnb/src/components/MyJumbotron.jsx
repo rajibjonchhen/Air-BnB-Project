@@ -43,7 +43,7 @@ export default class MyJumbotron extends React.Component {
                 </Col>
                     </Row>
                
-                    <Row className="dAbsolute" style={{bottom:"-400px",position:"absolute"}}>
+                    <Row className="dAbsolute" style={{bottom:"-400px",position:"absolute",left:'0'}}>
                         <Col>
                             <div className ="jumboPoster d-flex align-items-center"  style={{backgroundColor:"rgb(241,241,241)"}} >
                                 <div className ="jumboPosterLeft w-100" >

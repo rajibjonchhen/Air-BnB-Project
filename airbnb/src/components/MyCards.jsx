@@ -23,7 +23,7 @@ export default class MyCards extends React.Component {
         return (
                    <Container className='MyCards' fluid>
                      <Row className="d-flex justify-conter-between" >
-                     <span className='h1 text-left'>Inspiration for your next trip</span>
+                     <span className='h1 text-left mt-5 mb-3'>Inspiration for your next trip</span>
                         
                         <span className="ml-auto">
                         <span><BsChevronLeft/></span>

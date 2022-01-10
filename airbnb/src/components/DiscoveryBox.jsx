@@ -12,9 +12,12 @@ export default class DiscoveryBox extends React.Component {
         {heading:"from home", btnText:"Online Experience" ,image:img1}
     ]
     render() { 
-        return <Container className='text-white' fluid
-        >
-            <h1 className="text-left">Discover Airbnb Experiences</h1>
+        return <Container fluid>
+            <Row>
+                <Col>
+                <h1 className="text-left mt-5 mb-3">Discover Airbnb Experiences</h1>
+                </Col>
+            </Row>
             <Row>{this.discoveryCards.map((card,i) =>(<SingleDiscoveryCard key={i} card={card}/>))}</Row>
         </Container>;
     }
