@@ -1,6 +1,6 @@
 
 @media(max-width:956px){
-
+    
     .hideNavLinks{
         display:none
     }
@@ -11,5 +11,6 @@
 
     .whiteNav{
         display:block !important;
+       
     }
 }

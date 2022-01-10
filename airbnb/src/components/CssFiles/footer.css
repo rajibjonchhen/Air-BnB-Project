@@ -18,7 +18,7 @@ No media query since this is the default in Bootstrap
 @media (min-width: 992px) {  }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1127px) { 
+@media (max-width: 956px) { 
     footer ul {
         display:flex;
         flex-wrap: wrap; 
