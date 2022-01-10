@@ -63,7 +63,7 @@ displayToggle (section){
     
   }
 
-  guestCounter (change){
+  guestCounter = (change)=>{
     if(change=='+'){
         this.setState({guestCounter:this.state.guestCount+1})
         console.log("guest  count", this.state.guestCount)
