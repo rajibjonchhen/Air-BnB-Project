@@ -9,28 +9,12 @@ import '../App.css'
 
 
 class MyNavBar extends React.Component {
-    state = {
-      isScrolled : false,
-     
-    }
-// 
-listenScrollEvent = e => {
-  if (window.scrollY > 400) {
-    this.setState({isScrolled: 'true'})
-  } else if (window.scrollY < 400){
-    this.setState({isScrolled: 'false'})
-  }
-}
 
-componentDidMount() {
-  window.addEventListener('scroll', this.listenScrollEvent)
-}
 
-// 
     render() { 
         return (
             <Container fluid  style={{position:'fixed',zIndex:'5'}}>
-              <Row style={{padding:"0 5%",backgroundColor:"black", display:!this.state.isScrolled? 'block':'none'}}>
+              <Row style={{padding:"0 5%",backgroundColor:"black", display:this.props.isScrolled? 'none':'block'}}>
                 <Col>
                   <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"black", }} variant="dark">
                           <Navbar.Brand href="#home"><img src="https://cdn.freebiesupply.com/images/large/2x/airbnb-logo-white-on-black.png" style={{width:"120px" }}/></Navbar.Brand>  
@@ -61,7 +45,7 @@ componentDidMount() {
                 </Col>
             </Row>
             
-            <Row style={{padding:"0 5%",backgroundColor:"white", display:this.state.isScrolled? 'block':'none'}}>
+            <Row style={{padding:"0 5%",backgroundColor:"white", display:this.props.isScrolled? 'block':'none'}}>
                 <Col>
                     <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"white", }} variant="dark">
                           <Navbar.Brand href="#home"><img src="https://blogravenridgecottages.files.wordpress.com/2021/04/airbnb-logo.jpeg" style={{width:"120px" }}/></Navbar.Brand>  
