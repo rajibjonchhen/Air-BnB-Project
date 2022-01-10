@@ -12,3 +12,9 @@
 .searchSec:hover .underline{
 width:15px;
 }
+
+@media(max-width:956px){
+    .searchBar{
+        display:none !important;
+    }
+}

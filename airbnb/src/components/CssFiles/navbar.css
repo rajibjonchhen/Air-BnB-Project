@@ -1,0 +1,15 @@
+
+@media(max-width:956px){
+
+    .hideNavLinks{
+        display:none
+    }
+
+    .blackNav{
+        display:none !important;
+    }
+
+    .whiteNav{
+        display:block !important;
+    }
+}
