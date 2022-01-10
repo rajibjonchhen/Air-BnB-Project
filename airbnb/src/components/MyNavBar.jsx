@@ -11,7 +11,22 @@ import '../App.css'
 class MyNavBar extends React.Component {
     state = {
       isScrolled : false,
+     
     }
+// 
+listenScrollEvent = e => {
+  if (window.scrollY > 400) {
+    this.setState({isScrolled: 'true'})
+  } else if (window.scrollY < 400){
+    this.setState({isScrolled: 'false'})
+  }
+}
+
+componentDidMount() {
+  window.addEventListener('scroll', this.listenScrollEvent)
+}
+
+// 
     render() { 
         return (
             <Container fluid  style={{position:'fixed',zIndex:'5'}}>

@@ -16,30 +16,49 @@ import QuestionAboutHosting from './components/QuestionAboutHosting';
 
 
 
-function App() {
+class App extends React.Component {
 
- 
-  return (
-    <Container className="App m-0 p-0"  fluid>
-<Row>
-  <Col>
-  <MyNavBar/>
-  <div  style={{padding:"0 5%",backgroundColor:"black"}}>
-<MySearchBar/>
-<MyJumbotron/>
-  </div>
-<div className="bg-white" style={{padding:"0 5%"}}>
-<MyCards/>
-<DiscoveryBox/>
-<QuestionAboutHosting/>
-<InspirationSec/>
-</div>
-<MyFooter/>
-  </Col>
-</Row>
+  state = {
+    isScrolled : false,
    
+  }
+// 
+listenScrollEvent = e => {
+if (window.scrollY > 400) {
+  this.setState({isScrolled: 'true'})
+} else {
+  this.setState({isScrolled: 'false'})
+}
+}
+
+componentDidMount() {
+window.addEventListener('scroll', this.listenScrollEvent)
+}
+
+// 
+ render(){
+   return (
+     <Container className="App m-0 p-0"  fluid>
+      <Row>
+        <Col>
+        <MyNavBar isScrolled={this.state.isScrolled}/>
+        <div  style={{padding:"0 5%",backgroundColor:"black"}}>
+      <MySearchBar isScrolled={this.state.isScrolled}/>
+      <MyJumbotron/>
+        </div>
+      <div className="bg-white" style={{padding:"0 5%"}}>
+      <MyCards/>
+      <DiscoveryBox/>
+      <QuestionAboutHosting/>
+      <InspirationSec/>
+      </div>
+      <MyFooter/>
+        </Col>
+      </Row>
+        
     </Container>
   );
+}
 }
 
 export default App;
