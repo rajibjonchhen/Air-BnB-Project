@@ -4,6 +4,7 @@ import {Container,Row, Col} from 'react-bootstrap'
 import jumboCard from '../jumboCard.png'
 import jumboPic from './assets/jumboPic.png'
 import '../App.css'
+import '../components/CssFiles/jumbotron.css'
 
 
 export default class MyJumbotron extends React.Component {
@@ -25,7 +26,7 @@ export default class MyJumbotron extends React.Component {
     
     render() { 
         return (<>
-                <Container className="jumbotron p-5" style={{backgroundColor:"black" ,position:"relative"}} fluid>
+                <Container className="jumbotron p-5" style={{backgroundColor:"black" ,position:"relative", padding:'10vh'}} fluid>
                     <Row>
                         <Col>
                         
@@ -44,18 +45,20 @@ export default class MyJumbotron extends React.Component {
                
                     <Row className="dAbsolute" style={{bottom:"-400px",position:"absolute"}}>
                         <Col>
-                        <div className ="jumboPoster d-flex align-items-center"  style={{backgroundColor:"rgb(241,241,241)"}} >
-                        <div className ="w-100" >
-                        <p className ="h3">Introducing</p>
-                        <h1>Airbnb <br/> Gift Cards</h1>
-                        <button className = "roundedBorder text-white p-2" style={{backgroundColor:"black",minWidth:"150px"}} >
-                       shop now
-                   </button>
-                    </div>
-                    <div className ="w-100">
-                        <img src={jumboCard} className ="w-100"/>
-                    </div>
-                </div>
+                            <div className ="jumboPoster d-flex align-items-center"  style={{backgroundColor:"rgb(241,241,241)"}} >
+                                <div className ="jumboPosterLeft w-100" >
+                                    <p className ="h3">Introducing</p>
+                                    <h1>Airbnb <br/> Gift Cards</h1>
+                                    <button className = "roundedBorder text-white p-2" style={{backgroundColor:"black",minWidth:"150px"}} >
+                                    shop now
+                                    </button>
+                                </div>
+
+                                <div className ="jumboPosterRight w-100">
+                                    <img src={jumboCard} className ="w-100"/>
+                                </div>
+                            
+                            </div>
                         
                         </Col>
                     </Row>

@@ -4,7 +4,7 @@ import {Container, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap'
 import '../App.css'
 import { FaFacebookF, FaTwitter, FaInstagramSquare } from "react-icons/fa";
 import { FiGlobe } from "react-icons/fi";
-// import { TiSocialInstagram} from "react-icons/Ti";
+import  "../components/CssFiles/footer.css";
 
 export default class MyFooter extends React.Component {
 
@@ -47,14 +47,15 @@ export default class MyFooter extends React.Component {
         return (<>
                <footer>
                <Container style={{backgroundColor:"rgb(247,247,247)"}} fluid>
-                   <Row  style={{margin:"0 4%"}}>{
+                   <Row  className="footerElements" style={{margin:"0 4%"}}>{
                         this.footer.map((lists,i) =>(
                        <Col  key={lists} xs={12} sm={6} md={6} lg={4} xl={3}>
-                       <ul key={lists} className="list-unstyled text-left">{
+                       <ul key={lists} className=" list-unstyled text-left">{
                            lists.map(item =>(
                                <li key={item}className="my-3">{item}</li>
                                ))
                             } </ul>
+                            <hr/>
                        </Col>
                         ))
                        }</Row>

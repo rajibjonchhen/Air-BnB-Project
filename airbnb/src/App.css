@@ -144,7 +144,7 @@ outline:none;
 
 /* cards */
 .MyCards{
-  margin-top: 100vh;
+  margin-top: 50vh;
 }
 
 /* from foooter */
@@ -170,5 +170,4 @@ border-radius:50px;
 .hoverGrey:hover{
   background-color: rgba(128, 128, 128, 0.11);
   border-radius: 5px;
-  
 }

@@ -1,0 +1,14 @@
+
+@media (max-width:700px){
+    
+    .jumboPoster{
+    flex-direction: column;          
+    }
+
+    .jumboPosterLeft{
+        order:2;
+    }
+    jumboPosterRight{
+        order:1;
+    }
+}
