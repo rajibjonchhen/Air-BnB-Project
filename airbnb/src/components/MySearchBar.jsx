@@ -165,7 +165,7 @@ displayToggle (section){
                                                 <span >Adults</span>
                                                 <span>Ages 13 or above</span>
                                             </div>
-                                            <GuestCounter guestCounter = {this.guestCounter} NumbOfGuest={this.state.guestCount}/>
+                                            <GuestCounter guestCounter = {this.guestCounter} guest='guest' NumbOfGuest={this.state.guestCount}/>
                                         </div>
                                         <hr/>
                                         

@@ -3,12 +3,12 @@ import {FiPlusCircle, FiMinusCircle} from 'react-icons/fi'
 import '../App.css'
 
 
-const GuestCounter = (props)=>{
+const GuestCounter = ({guestCounter,guest})=>{
 
     const [counter,setCounter]= useState(0)
 
     useEffect(()=>{
-        props.guestCounter(counter)
+        guestCounter(guest,counter)
     },[counter])
     
         return <div className="d-flex justify-content-between align-items-center" style={{fontSize:'20px'}}>
@@ -18,5 +18,4 @@ const GuestCounter = (props)=>{
         </div>;
     
 }
- 
 export default GuestCounter;
