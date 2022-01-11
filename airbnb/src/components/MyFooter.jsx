@@ -49,7 +49,7 @@ export default class MyFooter extends React.Component {
                <Container  style={{backgroundColor:"rgb(247,247,247)", padding:'20px 0'}} fluid>
                    <Row  className="footerElements text-left" style={{margin:"0 4%"}}>{
                         this.footer.map((lists,i) =>(
-                       <Col  key={lists}  lg={4} xl={3}>
+                       <Col  key={i}  lg={4} xl={3}>
                        <span style={{fontSize: '15px',fontWeight:'600',borderRadius:'50px',textAlign:'left'}}>{lists[0]}</span>
                        <ul key={lists} className=" list-unstyled text-left">{
                            lists.slice(1).map(item =>(
@@ -62,8 +62,8 @@ export default class MyFooter extends React.Component {
                        }</Row>
                        <hr/>
                        <Row style={{margin:"0 4%"}} className="d-flex justify-content-between" >{
-                           this.footerFoot.map(lists =>(
-                               <ul key={lists} className=" text-left list-unstyled text-left d-flex">{
+                           this.footerFoot.map((lists,j) =>(
+                               <ul key={j} className=" text-left list-unstyled text-left d-flex">{
                                    lists.map(list => (
                                        <li key={list} className="mx-2">{list}</li>
                                        ))

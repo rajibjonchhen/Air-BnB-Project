@@ -91,7 +91,7 @@ componentDidUpdate(prevProps, prevState) {
         return (
             <Container className='bg-white mt-5 'fluid>
                 <p className="h3 text-left mt-5 mb-3">Inspiration for future getaways</p>
-                    <Row style={{position:'relative', overflow:"scroll", fontSize:"15px", marginBottom:'0',"&::-webkit-scrollbar-thumb":"red red"}} >
+                    <Row style={{position:'relative', overflow:"scroll", fontSize:"15px", marginBottom:'0',"&::webkitScrollbarThumb":"red"}} >
                         <ul className='d-flex list-unstyled  justify-content-between' style={{overflow: "scroll", whiteSpace: "nowrap"
 }}  >   
                             <li className=" mx-2 pointer " onClick = {(e) => {this.passArray(this.inspirationListsArt)}}><span className="h p-3 hoverGrey">Destinations for arts & culture</span> <hr className='underline' style={{border:'1px solid black',width:"100%",display: this.state.destinationArray===this.inspirationListsArt? 'block':'none'}}/></li>
@@ -105,7 +105,7 @@ componentDidUpdate(prevProps, prevState) {
                     </Row>
                     <Row>{
                         this.state.destinationArray.slice(0,this.state.displayNumberOfItems).map((list,i) =>(<>
-                            <Col   key={i.toString()} xs={6} sm={4} md={3} lg={3} xl={3}>{
+                            <Col   key={i} xs={6} sm={4} md={3} lg={3} xl={3}>{
                                 
                             i===11&&this.state.displayNumberOfItems==="12"? (<div  key={i} className='d-flex flex-column my-4 text-left pointer'
                             style={{display:this.state.displayShowMore? "block":"none"}} 
@@ -115,6 +115,7 @@ componentDidUpdate(prevProps, prevState) {
                             <span style={{fontSize:"14px"}}>{list[0]}</span> 
                             <span style={{fontSize:"14px",color:"grey"}}>{list[1]}</span>
                             </div>)
+                        
                             }</Col>
                          
                          

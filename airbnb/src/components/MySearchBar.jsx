@@ -140,7 +140,7 @@ displayToggle (section){
                         onClick={(e) =>{this.isClickedToggle(4); this.displayToggle('add guest')}}>
                     <div className='d-flex align-items-start flex-column '>
                     <span className="fontSize fontBold">Guests</span>
-                    <span className="fontSize">Add guests</span>
+                    <span className="fontSize">{this.state.guestCount>0? this.state.guestCount:'Add guests'}</span>
                     </div>
                 <div className="d-flex align-items-center roundedBorder" style={this.search}>
                     <span className='fontBold text-white pl-2'style={{display: this.state.displayToggle>'0'? 'block':'none'}}> Search</span>
