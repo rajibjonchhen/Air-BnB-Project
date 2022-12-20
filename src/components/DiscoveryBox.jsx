@@ -2,8 +2,8 @@
 import React, { Component } from 'react';
 import {Container, Row, Col} from 'react-bootstrap'
 import SingleDiscoveryCard from './SingleDiscoverCard';
-import img1 from '../components/assets/discoveryimage1.png'
-import img2 from '../components/assets/discoveryimage2.png'
+import img1 from '../components/assets/discoveryImage1.png'
+import img2 from '../components/assets/discoveryImage2.png'
 
 export default class DiscoveryBox extends React.Component {
 
